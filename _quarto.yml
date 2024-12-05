@@ -22,7 +22,8 @@ website:
     right: "Built with [Quarto](https://quarto.org/)"
     left: © Copyright 2024, UNECE 
       [![UNECE Logo](/img/favicon_unece.png){fig-alt="UNECE" width=20px}](https://unece.org)
-
+    center: |
+      [![ModernStats Logo](/img/modernstats_footer.png){fig-alt="ModernStats" width=110px}](https://unece.org/statistics/modernstats)
 
 format:
   html:
