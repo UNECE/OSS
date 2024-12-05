@@ -1,5 +1,24 @@
 ---
-title: "The Charter Principles"
+title: "The OSS Charter"
+format:
+  html: default
+  pdf:
+    toc: true
+    colorlinks: true
+    papersize: A4
+    include-in-header: 
+      text: |
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhead[C]{UNECE HLG-MOS OSS Charter}
+        \fancyhead[R]{}
+        \fancyhead[L]{}
+        \fancyfoot[R]{Copyright 2024, UNECE}
+        \fancyfoot[L]{%
+        \href{https://unece.github.io/OSS_Charter}{\nolinkurl{https://unece.github.io/OSS_Charter}}%
+        }
+    output-file: "UNECE HLG-MOS OSS Charter"
+    output-ext:  "pdf"
 ---
 
 ::: {.callout-important}

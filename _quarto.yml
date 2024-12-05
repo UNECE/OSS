@@ -3,7 +3,7 @@ project:
   output-dir: docs
   
 website:
-  title: "HLG-MOS OSS"
+  title: "HLG-MOS OSSP"
   navbar:
     logo: "img/UN Emblem_White.png"
     left:
@@ -24,6 +24,7 @@ website:
       [![UNECE Logo](/img/favicon_unece.png){fig-alt="UNECE" width=20px}](https://unece.org)
     center: |
       [![ModernStats Logo](/img/modernstats_footer.png){fig-alt="ModernStats" width=110px}](https://unece.org/statistics/modernstats)
+  favicon: /img/favicon_unece.png
 
 format:
   html:

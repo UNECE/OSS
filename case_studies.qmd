@@ -2,17 +2,24 @@
 title: "Case Studies"
 ---
 
+::: {.panel-tabset .nav-pills}
 ## SIS-CC
+
 Placeholder.
 
 ## Data Cleaning
+
 Placeholder.
 
 ## Istat
+
 Placeholder.
 
 ## SORS
+
 Placeholder.
 
 ## Awesome List for Official Statistics
+
 Placeholder.
+:::
