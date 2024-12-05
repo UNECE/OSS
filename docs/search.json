@@ -1,23 +1,135 @@
 [
   {
-    "objectID": "projects.html#project-2",
-    "href": "projects.html#project-2",
-    "title": "Projects",
-    "section": "Project 2",
-    "text": "Project 2"
+    "objectID": "major_topics.html",
+    "href": "major_topics.html",
+    "title": "Major Topics",
+    "section": "",
+    "text": "Placeholder."
   },
   {
-    "objectID": "projects.html#project-3",
-    "href": "projects.html#project-3",
-    "title": "Projects",
-    "section": "Project 3",
-    "text": "Project 3"
+    "objectID": "major_topics.html#licence-considerations",
+    "href": "major_topics.html#licence-considerations",
+    "title": "Major Topics",
+    "section": "",
+    "text": "Placeholder."
+  },
+  {
+    "objectID": "major_topics.html#standards",
+    "href": "major_topics.html#standards",
+    "title": "Major Topics",
+    "section": "Standards",
+    "text": "Standards\nPlaceholder."
+  },
+  {
+    "objectID": "major_topics.html#knowledge-building",
+    "href": "major_topics.html#knowledge-building",
+    "title": "Major Topics",
+    "section": "Knowledge Building",
+    "text": "Knowledge Building\nPlaceholder."
+  },
+  {
+    "objectID": "major_topics.html#governance",
+    "href": "major_topics.html#governance",
+    "title": "Major Topics",
+    "section": "Governance",
+    "text": "Governance\nPlaceholder."
+  },
+  {
+    "objectID": "major_topics.html#security",
+    "href": "major_topics.html#security",
+    "title": "Major Topics",
+    "section": "Security",
+    "text": "Security\nPlaceholder."
+  },
+  {
+    "objectID": "major_topics.html#culture",
+    "href": "major_topics.html#culture",
+    "title": "Major Topics",
+    "section": "Culture",
+    "text": "Culture\nPlaceholder."
+  },
+  {
+    "objectID": "charter.html",
+    "href": "charter.html",
+    "title": "The Charter Principles",
+    "section": "",
+    "text": "Important\n\n\n\nThe text herein is currently under draft and should by no means be considered finalised.\nAny references to endorsement by the UNECE HLG-MOS or any other body are proposed and not valid as of the time of writing."
+  },
+  {
+    "objectID": "charter.html#opening-statement",
+    "href": "charter.html#opening-statement",
+    "title": "The Charter Principles",
+    "section": "Opening Statement",
+    "text": "Opening Statement\nUNECE HLG-MOS recognizes open source software as essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics. Open source solutions enable NSOs to develop, validate, and share statistical methods while ensuring reproducibility of official statistics. By adopting and developing open source tools, NSOs can establish flexible, cost-effective statistical infrastructures that adapt to emerging data sources and methodological innovations. The transparent nature of open source software allows for peer review of statistical procedures, strengthening the credibility of official statistics and facilitating methodological harmonisation across countries. NSOs shall prioritise open source solutions for statistical processing, particularly for data collection, analysis, and dissemination tools, ensuring long-term sustainability and knowledge retention within statistical systems. Through open source adoption and development, NSOs can build robust statistical capabilities while promoting international statistical standards and best practices. Sharing statistical code and tools between NSOs creates a collaborative ecosystem that accelerates innovation in official statistics while reducing duplicate development efforts. This approach ensures efficient use of public resources while maintaining the independence and scientific integrity of national statistical systems. Open source statistical software enables NSOs to respond rapidly to emerging data needs while building trust through transparency in statistical production.\nThe UNECE HLG-MOS therefore endorses using the following Principles on Open Source Software in official statistics, both the production of software, and the adoption of software for statistical production."
+  },
+  {
+    "objectID": "charter.html#principles",
+    "href": "charter.html#principles",
+    "title": "The Charter Principles",
+    "section": "Principles",
+    "text": "Principles\n\n1. OSS by default\n\nStatement\nIn the production of official statistics we prefer the use of open source software solutions over closed software solutions. Moreover we share our software solutions as open source.\n\n\nRationale\nThis principle adds to core values in official statistics such as being transparent and independent in how we make statistics and striving for high quality and reproducibility. Using and sharing open source software increases the transparency on how we work, it avoids black boxes in the implementation of official statistics.\n\n\nImplications\nThis means that when implementing, redesigning or creating new processes, open source software solutions have preference. Only when no viable open source solutions exist it is possible to derogate from the default OSS option. The same holds sharing: sharing as open source is the default, but it is possible to derogate from this in justified cases. For NSIs this means that the methods used in the production of official statistics are not just described, the code used to actually apply the method is shared as OSS. For International Organisations this means openness on how international aggregates are computed via OSS solutions.\n\n\n\n2. Work in the open\n\nStatement\nWe start our projects in the open from the beginning and clearly mark maturity status.\n\n\nRationale\nMany projects have the intention to publish results as open source but have difficulties deciding on the best moment to do this. It might feel uncomfortable to put early ideas and rough implementation sketches on-line, but on the other hand sharing it too late prevents others from providing valuable comments and ideas or volunteering to work together on the project. To circumvent this dilemma we start working in the open right from the beginning wherever possible and clearly mark and update our projects development phase over time.\n\n\nImplications\nThis means that it is recommended and accepted to start development projects in the public domain. We clearly show development status, which may vary from pre-alpha to stable and proven by showing a public roadmap, public source code repository, a public backlog of features, issues, bugs etc.\n\n\n\n3. Improve and give back\n\nStatement\nWe rather improve existing open source solutions than decide to create new solutions and we give our improvements back to the respective open source community.\n\n\nRationale\nThere are cases where existing open source solutions do not exactly cover the functionality needed in official statistics. The quickest way to cope with this is to copy a solution, adapt it and use it. However improvements implemented in the original solution will not be merged into the copy and our improvements made to the copy will not be visible in a wider context. Therefore we strive to give back our improvements to the open source community as change requests or suggestions even if it takes additional resources to do that. In the end this is an investment in the effectiveness and efficiency of the official statistics community as a whole.\n\n\nImplications\nThis means that statistical organisations actively search for solutions that can be re-used instead of creating new solutions. Even if a solution does not exactly fit the needed functionality, it is examined how it could be improved, keeping the intended functionality in mind or even widening it. This also holds for partial solutions such as code snippets and (machine learning) models that could be valuable for others. The changes or extensions are tested, documented, and given back to the respective community to decide on possible integration into their solution.\n\n\n\n4. Think generic statistical building blocks\n\nStatement\nIn our open source work we strive for re-usable generic functional building blocks that support well-defined methodology in statistical processes.\n\n\nRationale\nPublishing source code as open source is not enough for effective re-use in the global official statistics community. It is necessary to think about the design of what is to be shared and identify generic statistical building blocks that can be used in different contexts. Therefore we design the software from the intended user point of view and in a way that it can be re-used in multiple statistical domains or organisations as possible. This helps maintain complex statistical processes and high-quality official statistics.\n\n\nImplications\nThis means that monolithic applications are componentised as much as possible in generic configurable statistical building blocks. We put statistical functionality in code and make statistical expert knowledge configurable. We make these components as much as possible generic in time, across statistical domains and across statistical organisations. For individual NSIs this means that not just “its” statistical production process should be kept in mind when developing tools but also the possible wider applicability. International Organisations should actively encourage the development and sharing of generic OSS solutions within their domain of expertise.\n\n\n\n5. Test, package and document\n\nStatement\nWe test, package and document our open source software for easy re-use.\n\n\nRationale\nRe-using generic statistical software in the official statistics community is not always easy due to differences in statistical processes, technological environments, and way of working. Testing our software on functionality and security and packaging our software with good documentation is of utter importance as it improves the chances of re-use. General purpose package management systems offer versioning and documentation facilities to exchange generic statistical software. The use of such packaging systems helps maintain complex statistical processes and guarantee high-quality official statistics.\n\n\nImplications\nThis means that we invest in testing, security scans, packaging and documentation to enable re-use. Security patches are applied as soon as possible. Documentation is designed from the viewpoint of a statistical user, keeping it concise, understandable but also complete and covering at least the basic functionality and a complete API reference. Packaging is a key success criterion for open source projects. Larger projects should adopt modern approaches such as containerisation, automate as much as possible, and smaller projects can follow these practices. Every package is downloadable without registration, is installable with minimal efforts and has a minimal viable example that can be executed. Dependencies are managed and minimised as much as possible . Versioning is implemented according to the principles of the respective package exchange platform with a preference for semantic versioning. Security patches are implemented with priority. For individual NSI this means that published OSS software is maintained and updated according to the policies of the relevant platforms, e.g. CRAN. International Organisations should play an active role in knowledge exchange on test, package and documentation policies in their domain of expertise.\n\n\n\n6. Choose permissive\n\nStatement\nWe choose the most permissive OS licence possible for sharing our software.\n\n\nRationale\nRe-using software is in the common interest of the official statistics community. Re-use of our software not only enhances efficiency but also improves the quality of the software since the larger user community can contribute to development and maintenance. To maximise re-use by others it is necessary to choose an OS licence that maximally allows re-use, and minimises conflicts with other licences. This is known as “permissive” (see for example here). When choosing the appropriate OS licence we strive for maximum re-use.\n\n\nImplications\nThis means that when sharing software we opt for a permissive licence (e.g. Apache 2.0/MIT) over a “Copyleft” licence, taking into legal, organisational and societal considerations. Mandatory acknowledgement / attribution of sources and authors is a viable additional option.\n\n\n\n7. Promote\n\nStatement\nWe invest in promoting new developments or improvements on our open source software within the official statistics community and where applicable in a wider context.\n\n\nRationale\nRe-use of generic software is not going to happen if no one knows what can be re-used. On the other hand it is difficult to know beforehand what the value of our software is for others. The only way out is to communicate, even if we have no clue if it is usable in a wider context. We advertise our software in an honest, brief way, mentioning its core functionality. Let the public know our plans for new developments and improvements and be open for suggestions for improvements.\n\n\nImplications\nThis means working together on communication facilities targeted at the open source community. A community-driven approach of sharing knowledge, possible OS building blocks and its application in the statistical production should be the preference instead of centrally maintained repositories. A centrally maintained repository of software tools can become outdated soon and collecting information from the community could be a big effort. Therefore, such a repository should be maintained by the whole community. For individual NSIs this means that they are active participants in the OSS community by participating in events, joining relevant only forums, etc. International Organisations should play an active role in the organisation of the statistical OSS community in their domain of expertise."
+  },
+  {
+    "objectID": "acknowledgements.html",
+    "href": "acknowledgements.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Placeholder."
+  },
+  {
+    "objectID": "acknowledgements.html#placeholder",
+    "href": "acknowledgements.html#placeholder",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Placeholder."
+  },
+  {
+    "objectID": "case_studies.html",
+    "href": "case_studies.html",
+    "title": "Case Studies",
+    "section": "",
+    "text": "Placeholder."
+  },
+  {
+    "objectID": "case_studies.html#sis-cc",
+    "href": "case_studies.html#sis-cc",
+    "title": "Case Studies",
+    "section": "",
+    "text": "Placeholder."
+  },
+  {
+    "objectID": "case_studies.html#data-cleaning",
+    "href": "case_studies.html#data-cleaning",
+    "title": "Case Studies",
+    "section": "Data Cleaning",
+    "text": "Data Cleaning\nPlaceholder."
+  },
+  {
+    "objectID": "case_studies.html#istat",
+    "href": "case_studies.html#istat",
+    "title": "Case Studies",
+    "section": "Istat",
+    "text": "Istat\nPlaceholder."
+  },
+  {
+    "objectID": "case_studies.html#sors",
+    "href": "case_studies.html#sors",
+    "title": "Case Studies",
+    "section": "SORS",
+    "text": "SORS\nPlaceholder."
+  },
+  {
+    "objectID": "case_studies.html#awesome-list-for-official-statistics",
+    "href": "case_studies.html#awesome-list-for-official-statistics",
+    "title": "Case Studies",
+    "section": "Awesome List for Official Statistics",
+    "text": "Awesome List for Official Statistics\nPlaceholder."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "Introduction",
     "section": "",
-    "text": "Thanks for checking out my web site!"
+    "text": "Open-source software is essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics.\nConsequently, the Charter and its principles herein on open-source Software in official statistics in both the production of software, and the adoption of software for statistical production, have been drafted under the HLG-MOS Open-Source Software Project 2024 for consideration of endorsement by the UNECE HLG-MOS.\nBe aware that content found here is currently under draft and should not be considered final copy at the current time of writing.\n\n  \n\n\n\n\n\n\n\n\nNote\n\n\n\nWeb site under construction"
   }
 ]

@@ -1,0 +1,21 @@
+---
+title: "Major Topics"
+---
+
+## Licence Considerations
+Placeholder.
+
+## Standards
+Placeholder.
+
+## Knowledge Building
+Placeholder.
+
+## Governance
+Placeholder.
+
+## Security
+Placeholder.
+
+## Culture
+Placeholder.

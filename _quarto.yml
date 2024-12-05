@@ -8,7 +8,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - projects.qmd
+      - charter.qmd
+      - case_studies.qmd
+      - major_topics.qmd
+      - acknowledgements.qmd
     tools:
       - icon: linkedin
         href: https://www.linkedin.com/showcase/unece-modernisation-of-official-statistics/
@@ -21,6 +24,7 @@ website:
 format:
   html:
     theme: cerulean
+    mainfont: Roboto
     toc: true
 
 editor: source
