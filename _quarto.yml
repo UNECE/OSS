@@ -3,16 +3,17 @@ project:
   output-dir: docs
   
 website:
-  title: "HLG-MOS OSSP"
+  title: "HLG-MOS Open-Source Software Charter"
   navbar:
     logo: "img/UN Emblem_White.png"
     left:
       - href: index.qmd
         text: Home
-      - charter.qmd
+      - href: charter.qmd
+        text: "The Principles"
       - case_studies.qmd
       - major_topics.qmd
-      - acknowledgements.qmd
+      - background.qmd
     tools:
       - icon: linkedin
         href: https://www.linkedin.com/showcase/unece-modernisation-of-official-statistics/
@@ -20,8 +21,7 @@ website:
         href: https://github.com/UNECE/OSS_Charter
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
-    left: © Copyright 2024, UNECE 
-      [![UNECE Logo](/img/favicon_unece.png){fig-alt="UNECE" width=20px}](https://unece.org)
+    left: This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 
     center: |
       [![ModernStats Logo](/img/modernstats_footer.png){fig-alt="ModernStats" width=110px}](https://unece.org/statistics/modernstats)
   favicon: /img/favicon_unece.png
@@ -29,7 +29,7 @@ website:
 format:
   html:
     theme: cerulean
-    mainfont: Roboto
+    mainfont: Roboto, Arial, sans-serif
     toc: true
 
 editor: source

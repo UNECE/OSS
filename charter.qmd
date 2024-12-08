@@ -1,5 +1,5 @@
 ---
-title: "The OSS Charter"
+title: "UNECE HLG-MOS Open-Source Software Charter for Official Statistics"
 format:
   html: default
   pdf:
@@ -10,12 +10,11 @@ format:
       text: |
         \usepackage{fancyhdr}
         \pagestyle{fancy}
-        \fancyhead[C]{UNECE HLG-MOS OSS Charter}
+        \fancyhead[C]{UNECE HLG-MOS Open-Source Software Charter for Official Statistics}
         \fancyhead[R]{}
         \fancyhead[L]{}
-        \fancyfoot[R]{Copyright 2024, UNECE}
-        \fancyfoot[L]{%
-        \href{https://unece.github.io/OSS_Charter}{\nolinkurl{https://unece.github.io/OSS_Charter}}%
+        \fancyfoot[C]{This work is licensed under a %
+        \href{http://creativecommons.org/licenses/by/4.0/}{Creative Commons Attribution 4.0 International License}%
         }
     output-file: "UNECE HLG-MOS OSS Charter"
     output-ext:  "pdf"

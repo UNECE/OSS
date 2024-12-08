@@ -14,7 +14,7 @@ Be aware that content found here is currently under draft and should not be cons
 
 1.  Begin by cloning the repo.
 
-2.  Add content to index.qmd, projects.qmd etc. as required.
+2.  Add changes to charter.qmd etc. as required.
 
 3.  Render the web site locally by clicking on the "Build" tab in the Environment etc. pane, then clicking "Render Website".
 
