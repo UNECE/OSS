@@ -29,7 +29,7 @@ website:
 format:
   html:
     theme: cerulean
-    mainfont: Roboto, Arial, sans-serif
+    css: styles.css
     toc: true
 
 editor: source
