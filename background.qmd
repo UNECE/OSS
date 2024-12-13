@@ -1,5 +1,6 @@
 ---
 title: "Background"
+sidebar: false
 ---
 
 ::: {#intro}
@@ -9,6 +10,14 @@ Consequently, the Charter and its principles herein on open-source Software in o
 
 **Be aware that content found here is currently under draft and should not be considered final copy at the current time of writing.**
 :::
+
+## Who we are
+
+Placeholder.
+
+## Target Audience
+
+Placeholder.
 
 ::: callout-note
 Web site under construction

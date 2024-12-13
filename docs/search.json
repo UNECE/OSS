@@ -1,10 +1,31 @@
 [
   {
-    "objectID": "oldindex.html",
-    "href": "oldindex.html",
-    "title": "Introduction",
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
     "section": "",
-    "text": "Open-source software is essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics.\nConsequently, the Charter and its principles herein on open-source Software in official statistics in both the production of software, and the adoption of software for statistical production, have been drafted under the HLG-MOS Open-Source Software Project 2024 for consideration of endorsement by the UNECE HLG-MOS.\nBe aware that content found here is currently under draft and should not be considered final copy at the current time of writing.\n\n  \n\n\n\n\n\n\n\n\nNote\n\n\n\nWeb site under construction"
+    "text": "Placeholder."
+  },
+  {
+    "objectID": "resources.html#getting-started-with-open-source",
+    "href": "resources.html#getting-started-with-open-source",
+    "title": "Resources",
+    "section": "",
+    "text": "Placeholder."
+  },
+  {
+    "objectID": "resources.html#links",
+    "href": "resources.html#links",
+    "title": "Resources",
+    "section": "Links",
+    "text": "Links\n\nWork of the UNECE High-Level Group for the Modernisation of Official Statistics\nOutputs of the UNEC Statistical Modernisation Unit\nThe Awesome List of Official Statistics\nThe ModernStats Carpentries (under construction)\n\nPython\nGit\nR\n\nESS Princples on Open-Source Software"
+  },
+  {
+    "objectID": "resources.html#papers",
+    "href": "resources.html#papers",
+    "title": "Resources",
+    "section": "Papers",
+    "text": "Papers\nPlaceholder.\n\n\n\n\n\n\nNote\n\n\n\nWeb site under construction"
   },
   {
     "objectID": "index.html",
@@ -25,7 +46,21 @@
     "href": "background.html",
     "title": "Background",
     "section": "",
-    "text": "Open-source software is essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics.\nConsequently, the Charter and its principles herein on open-source Software in official statistics in both the production of software, and the adoption of software for statistical production, have been drafted under the HLG-MOS Open-Source Software Project 2024 for consideration of endorsement by the UNECE HLG-MOS.\nBe aware that content found here is currently under draft and should not be considered final copy at the current time of writing.\n\n\n\n\n\n\n\nNote\n\n\n\nWeb site under construction"
+    "text": "Open-source software is essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics.\nConsequently, the Charter and its principles herein on open-source Software in official statistics in both the production of software, and the adoption of software for statistical production, have been drafted under the HLG-MOS Open-Source Software Project 2024 for consideration of endorsement by the UNECE HLG-MOS.\nBe aware that content found here is currently under draft and should not be considered final copy at the current time of writing."
+  },
+  {
+    "objectID": "background.html#who-we-are",
+    "href": "background.html#who-we-are",
+    "title": "Background",
+    "section": "Who we are",
+    "text": "Who we are\nPlaceholder."
+  },
+  {
+    "objectID": "background.html#target-audience",
+    "href": "background.html#target-audience",
+    "title": "Background",
+    "section": "Target Audience",
+    "text": "Target Audience\nPlaceholder.\n\n\n\n\n\n\nNote\n\n\n\nWeb site under construction"
   },
   {
     "objectID": "charter.html",

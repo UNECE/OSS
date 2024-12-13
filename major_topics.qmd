@@ -1,5 +1,6 @@
 ---
 title: "Major Topics"
+sidebar: false
 ---
 
 ## Licence Considerations

@@ -1,0 +1,31 @@
+---
+title: "Resources"
+sidebar: false
+---
+
+## Getting Started With Open-Source
+
+Placeholder.
+
+## Links
+
+- [Work of the UNECE High-Level Group for the Modernisation of Official Statistics](https://unece.org/statistics/networks-of-experts/high-level-group-modernisation-statistical-production-and-services)
+
+- [Outputs of the UNEC Statistical Modernisation Unit](https://unece.org/statistics/modernstats)
+
+- [The Awesome List of Official Statistics](https://github.com/SNStatComp/awesome-official-statistics-software)
+
+- The ModernStats Carpentries (under construction)
+    - [Python](https://github.com/UNECE/ModernStats_Python)
+    - [Git](https://github.com/UNECE/ModernStats_Git)
+    - [R](https://github.com/UNECE/ModernStats_R)
+
+- [ESS Princples on Open-Source Software](https://os4os.pages.code.europa.eu/pbbp/principles.html)
+
+## Papers
+
+Placeholder.
+
+::: callout-note
+Web site under construction
+:::

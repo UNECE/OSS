@@ -5,7 +5,7 @@ project:
 website:
   title: "HLG-MOS Open-Source Software Charter"
   navbar:
-    logo: "img/UN Emblem_White.png"
+    logo: "assets/img/oss_charter_logo.png"
     left:
       - href: index.qmd
         text: Home
@@ -14,22 +14,34 @@ website:
       - case_studies.qmd
       - major_topics.qmd
       - background.qmd
+      - resources.qmd
     tools:
       - icon: linkedin
         href: https://www.linkedin.com/showcase/unece-modernisation-of-official-statistics/
       - icon: github
-        href: https://github.com/UNECE/OSS_Charter
+        href: https://github.com/UNECE/OSS
+  sidebar:
+    - id: "intro"
+      style: "docked"
+      background: "light"
+      contents:
+      - text: "Who we are"
+        href: "background.html#who-we-are"
+      - text: "Target audience"
+        href: "background.html#target-audience"
+      - text: "Getting started with OS"
+        href: "resources.html#getting-started-with-open-source"
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
     left: This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 
     center: |
-      [![ModernStats Logo](/img/modernstats_footer.png){fig-alt="ModernStats" width=110px}](https://unece.org/statistics/modernstats)
-  favicon: /img/favicon_unece.png
+      [![ModernStats Logo](/assets/img/modernstats_footer.png){fig-alt="ModernStats" width=110px}](https://unece.org/statistics/modernstats)
+  favicon: /assets/img/oss_charter_logo.png
 
 format:
   html:
     theme: cerulean
-    css: styles.css
+    css: /assests/styling/styles.css
     toc: true
 
 editor: source

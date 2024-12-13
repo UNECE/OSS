@@ -6,7 +6,7 @@ format:
 about:
   id: intro
   template: solana
-  image: img/modernstasts_centered.jpg
+  image: assets/img/modernstasts_centered.jpg
 include-in-header:
   text: |
     <style type="text/css">
@@ -23,18 +23,18 @@ Open-source software is an essential for producing official statistics in an ope
 :::
 
 ::: {layout-nrow="2"}
-[![<a href="/charter.html#oss-by-default">Open by default</a>](img/principles/openbydefault.png)](/charter.html#oss-by-default)
+[![<a href="/charter.html#oss-by-default">Open by default</a>](assets/img/principles/openbydefault.png)](/charter.html#oss-by-default)
 
-[![<a href="/charter.html#work-in-the-open">Work in the open</a>](img/principles/workintheopen.png)](/charter.html#work-in-the-open)
+[![<a href="/charter.html#work-in-the-open">Work in the open</a>](assets/img/principles/workintheopen.png)](/charter.html#work-in-the-open)
 
-[![<a href="/charter.html#improave-and-give-back">Improve and give back</a>](img/principles/improveandgiveback.png)](/charter.html#improve-and-give-back)
+[![<a href="/charter.html#improve-and-give-back">Improve and give back</a>](assets/img/principles/improveandgiveback.png)](/charter.html#improve-and-give-back)
 
-[![<a href="/charter.html#think-generic-building-blocks">Think generic building blocks</a>](img/principles/thinkgenericbuildingblocks.png)](/charter.html#think-generic-statistical-building-blocks)
+[![<a href="/charter.html#think-generic-statistical-building-blocks">Think generic building blocks</a>](assets/img/principles/thinkgenericbuildingblocks.png)](/charter.html#think-generic-statistical-building-blocks)
 
-[![<a href="/charter.html#test-package-and-document">Test, package and document</a>](img/principles/testpackageanddocument.png)](/charter.html#test-package-and-document)
+[![<a href="/charter.html#test-package-and-document">Test, package and document</a>](assets/img/principles/testpackageanddocument.png)](/charter.html#test-package-and-document)
 
-[![<a href="/charter.html#choose-permissive">Choose permissive</a>](img/principles/choosepermissive.png)](/charter.html#choose-permissive)
+[![<a href="/charter.html#choose-permissive">Choose permissive</a>](assets/img/principles/choosepermissive.png)](/charter.html#choose-permissive)
 
-[![<a href="/charter.html#promote">Promote</a>](img/principles/promote.png)](/charter.html#promote)
+[![<a href="/charter.html#promote">Promote</a>](assets/img/principles/promote.png)](/charter.html#promote)
 
 :::

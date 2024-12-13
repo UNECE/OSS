@@ -1,5 +1,6 @@
 ---
 title: "UNECE HLG-MOS Open-Source Software Charter for Official Statistics"
+sidebar: false
 format:
   html: default
   pdf:
