@@ -35,7 +35,7 @@ UNECE HLG-MOS recognizes open source software as essential for modern statistica
 The UNECE HLG-MOS therefore endorses using the following Principles on Open Source Software in official statistics, both the production of software, and the adoption of software for statistical production.
 
 
-## Principles
+## Principles (under process of CES endorsement)
 
 ### 1. OSS by default
 #### Statement
