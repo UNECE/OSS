@@ -41,7 +41,7 @@ website:
 format:
   html:
     theme: cerulean
-    css: /assests/styling/styles.css
+    css: /assets/styling/styles.css
     toc: true
 
 editor: source
