@@ -12,7 +12,8 @@ website:
       - href: charter.qmd
         text: "The Principles"
       - case_studies.qmd
-      - major_topics.qmd
+      - href: major_topics.qmd
+        text: "Major Topics"
       - background.qmd
       - resources.qmd
     tools:

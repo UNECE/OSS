@@ -3,9 +3,7 @@ title: "Resources"
 sidebar: false
 ---
 
-## Getting Started With Open-Source
-
-Placeholder.
+# Getting Started With Open-Source
 
 ## Links
 
@@ -25,7 +23,7 @@ Placeholder.
 
 ## Papers
 
-Placeholder.
+...
 
 ::: callout-note
 Web site under construction

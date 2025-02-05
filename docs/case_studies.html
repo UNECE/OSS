@@ -60,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="assets/js/misc.js"></script>
 
 
 <link rel="stylesheet" href="./assets/styling/styles.css">
@@ -146,29 +147,281 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="tabset-margin-container"></div><div class="panel-tabset nav-pills">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">SIS-CC</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Data Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Istat</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">SORS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Awesome List for Official Statistics</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true"><strong>Data Cleaning</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><strong>Istat</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><strong>SIS-CC</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false"><strong>SORS</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false"><strong>Awesome List for Official Statistics</strong></a></li></ul>
 <div class="tab-content nav-pills">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>Placeholder.</p>
+<p><strong>Building a FOSS ecosystem for statistical data processing</strong></p>
+<p><em>Statistics Netherlands</em></p>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Statistics Netherlands (CBS) has embraced the use of Free and Open Source Software for statistical production for more than a decade. A significant step in that direction was taken in 2010 when R was adopted as a strategic tool for data processing<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. R is both a software tool for statistical data processing and a programming language that is extensible through R packages. These packages are typically published on the Comprehensive R Archive Network, which enforces a strict quality policy on code quality, documentation, and interoperability of packages.</p>
+<p>Recognising the need for production systems that are built out of composable and reusable (generic) modules, researchers at CBS started to both use and contribute packages to the R ecosystem. A major part of those contributions consist of R packages in the area of statistical data cleaning and data processing &nbsp;<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> &nbsp;<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>.</p>
+<p>Over time, these packages have been adopted both within Statistics Netherlands and outside. Within CBS, packages are used in the production of areas covering social and economic statistics, agriculture, international trade, education, environmental statistics, emissions, income, shipping, Short-Term-Statistics, recreation, museums, and many more. Outside statistics we have seen uptake of the packages by statistical institutes of Iceland, Denmark, Italy, Brasil, and probably many more. It is noteworthy that the US Department of Agriculture National Agricultural Statistical Service (USDA-NASS&nbsp;<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>) is using CBS R packages to validate and clean data from large national surveys under American farmers.</p>
+</section>
+<section id="the-r-based-ecosystem" class="level3">
+<h3 class="anchored" data-anchor-id="the-r-based-ecosystem">The R based ecosystem</h3>
+<p>The current ecosystem (Table 1) consists of a number of packages that integrate seamlessly. Not only because there is a shared technical platform (i.e., R), but also because careful thought was put in pegging out, with formal precision, what each fundamental processing step entails. Below we describe two examples demonstrating the extensibility and power of this modular approach.</p>
+<p>The first example concerns <em>data validation</em>. Until about 2024, the act of checking data against domain knowledge, in the form of validation rules, was not recognised as a separate activity. In almost any available system this was either hard-coded by users or integrated in a larger data-editing system. Creating a separate package (called <em>validate</em>) with the sole purpose of defining, manipulating and executing data validation rules yielded the possibility of monitoring the progress of data quality along multiple statistical value chains using a single piece of software &nbsp;<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> &nbsp;<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>. Moreover, the rule management system of the package is reused in packages for error localisation (<em>errorlocate</em>), data correction (<em>deductive</em>) and aggregating based on dynamically defined data groupings (<em>accumulate</em>) &nbsp;<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> &nbsp;<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> &nbsp;<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>.</p>
+<p>A second example is an imputation package (<em>simputation</em>) that allows users to combine (i.e., chain) a large number of popular imputation models in fall-through scenarios that are often used in economic statistics&nbsp;<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>. The package allows for group-wise processing, where groups are statically defined. When the need arose to extend the functionality, it was possible to define a new add-on package (<em>accumulate</em>) that allows for grouping of data where the grouping is determined dynamically and depending on data circumstances. The fact that it was possible to add new, unanticipated functionality is a consequence of the careful design and separation of concerns when designing each individual module.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Table 1. R-based open source ecosystem for statistical data processing</th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>R package</strong></td>
+<td style="text-align: left;"><strong>Description</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=validate"><em>validate</em></a></td>
+<td style="text-align: left;">Check validity of data based on user-defined rules.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=dcmodify"><em>dcmodify</em></a></td>
+<td style="text-align: left;">Adapt erroneous data based on user-defined rules.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=errorlocate"><em>errorlocate</em></a></td>
+<td style="text-align: left;">Find the minimal number of erroneous data points.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=simputation"><em>simputation</em></a></td>
+<td style="text-align: left;">Many different imputation methods with a single easy to learn interface.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=rspa"><em>rspa</em></a></td>
+<td style="text-align: left;">Adjust numerical records to fit equality and inequality restrictions.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=deductive"><em>deductive</em></a></td>
+<td style="text-align: left;">Solve data errors, using the data and validation rules.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=validatetools"><em>validatetools</em></a></td>
+<td style="text-align: left;">Find contradictions and redundancies in rule sets.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=accumulate"><em>accumulate</em></a></td>
+<td style="text-align: left;">Grouped aggregation, where grouping is dynamic and data-dependent.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=lumberjack"><em>lumberjack</em></a></td>
+<td style="text-align: left;">Automatically track changes in data for logging purposes &nbsp;<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> &nbsp;<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://cran.r-project.org/package=reclin2"><em>reclin2</em></a></td>
+<td style="text-align: left;">Join datasets based on (multiple) possibly inexact keys &nbsp;<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>All packages have been developed in the open, by hosting the code on open version control repositories (i.e., GitHub), presenting the work at conferences, publishing in scientific journals, and promoting usage and feedback from (potential) users. The uptake of packages by non-CBS users is facilitated by releasing the packages on a standardised release platform (i.e., CRAN), using permissive licences and paying attention to documentation. Feedback and contributions from users outside of Statistics Netherlands, and even from outside of the official statistics community, has substantially helped improve and generalise the software. The fact that software can be easily downloaded and installed makes it trivial for R users to give the software a try and the open development platforms facilitate reporting of questions, issues, or even contributing. It should in this respect be mentioned that contributions may range from things as simple as fixing typing errors in the documentation, to demonstrating new use cases, filing bug reports, or even fixing bugs or adding functionality.</p>
+</section>
+<section id="how-working-in-foss-contributes-to-the-success-of-the-ecosystem" class="level3">
+<h3 class="anchored" data-anchor-id="how-working-in-foss-contributes-to-the-success-of-the-ecosystem">How working in FOSS contributes to the success of the ecosystem</h3>
+<p>The fact that the whole ecosystem has been developed in the open, as an open source project, has contributed crucially to the success on several levels.</p>
+<p>In the first place there is a large FOSS community in R that provides help, a packaging system, and also an infrastructure for developing, testing, documenting and publishing packages. The fact that this infrastructure, including the presence of a global informal and helpful community, exists has been extremely helpful during design and development of the packages. The usefulness of being able to directly contact the people who develop the infrastructure one is using is hard to overstate.</p>
+<p>Secondly, publishing the packages in open source immediately gives a large audience the opportunity to try the product: <em>given enough eyeballs, all bugs are shallow</em> &nbsp;<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>. Enthusiastic users are able to contribute new use cases, issues, and documentation, which overall has contributed to creating more general and more robust software.</p>
+</section>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p>Placeholder.</p>
+<p><strong>Adoption of OSS and governance efforts in Istat</strong></p>
+<p><em>Italian National Institute of Statistics (Istat)</em></p>
+<section id="introduction-1" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-1">Introduction</h3>
+<p>Outside of statistical software, Istat has a long experience of using open source software and already in 2004 an official working group on the use of open source software was formed. The group, made up of statistical and IT experts, studied the current uses of OS software and its potential developments. Under the impetus of the group, open source software spread throughout Istat, from Linux servers to connectivity software and various modules to support group work.</p>
+<p>As for the statistical software, in the past Istat’s statistical work was carried out exclusively with SAS software, but for specific tasks some additional SAS tools had to be developed (e.g., MAUSS for deciding the optimal sample size and its allocation in multi-purpose surveys; GENESEES for weight calibration and estimation in sample surveys). For data processing and imputation, it was decided to use the SAS-based commercial tool BANFF, developed by Statistics Canada. Obviously, it was difficult to disseminate SAS-based tools to the members of the Italian National Statistical System (NSS) because, in most cases, they did not use SAS.</p>
+<p>The introduction of R took place shortly after the year 2000, mainly in the Methodology Directorate, to test new methods; initially an informal group of R experts was created and met once a month; this group started to give workshops and occasional internal training (regular training started in 2007). These activities led to the identification of R as the preferred environment for developing new packages, also to replace tools developed in SAS or as stand-alone applications; the decision was also taken in response to a ministerial directive in April 2003, inviting government agencies to adopt open source software tools and avoid dependence on a single commercial software tool.</p>
+<p>The first R packages were released around 2010 (<a href="https://diegozardetto.github.io/ReGenesees/">ReGenesees</a> for weights calibration and estimation; <a href="https://cran.r-project.org/package=SamplingStrata">SamplingStrata</a> for stratification and optimum allocation; <a href="https://cran.r-project.org/package=SeleMix">SeleMix</a> for selective editing; <a href="https://cran.r-project.org/package=StatMatch">StatMatch</a> for statistical matching), others followed later (e.g.&nbsp;<a href="https://www.istat.it/en/classifications-and-tools/methods-and-software-of-the-statistical-process/design-phase/fs4/">FS4</a> for stratification, <a href="https://cran.r-project.org/package=R2BEAT">R2BEAT</a> for determining optimal sample size and its allocation). In other cases, such as the <a href="https://www.istat.it/en/classifications-and-tools/methods-and-software-of-the-statistical-process/process-phase/data-integration/relais/">RELAIS</a> record linkage system, R became the engine for statistical computations. These packages were developed in the Methodology Directorate, and to facilitate their dissemination within the NSS and also externally, it was decided to create a repository on the corporate website&nbsp;<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>. Packages to be included in the repository had to pass a rigorous approval procedure, which required the availability of clear documentation, a presentation to a committee and also the adoption of an EUPL licence, as recommended by the Istat Legal Office. Later, the licence requirements were relaxed and the GPL licence was also accepted, being the most popular in the R community. Some of the R packages are also distributed on CRAN and are easily accessible in the “Official Statistics” task view&nbsp;<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a>.</p>
+<p>Today, the activities related to R are focused on the maintenance of existing packages, which have recently experienced some disruptions due to the retirement of their developers/maintainers, and on the testing of already existing external packages (instead of developing new ones). For example, Istat is testing the R packages for data editing and imputation (<a href="https://cran.r-project.org/package=validate">validate</a>, <a href="https://cran.r-project.org/package=validatetools">validatetools</a>, <a href="https://cran.r-project.org/package=errorlocate">errorlocate</a>, <a href="https://cran.r-project.org/package=simputation">simputation</a>&nbsp;<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> and <a href="https://cran.r-project.org/package=VIM">VIM</a>) with the aim of adopting them to replace our obsolete standalone tool <a href="https://www.istat.it/en/classifications-and-tools/methods-and-software-of-the-statistical-process/process-phase/detection-and-treatment-of-measurement-errors-and-imputation-of-partial-non-responses/concordjava/">CONCORDJava</a>. Similar tests are underway for disclosure control (R packages <a href="https://cran.r-project.org/package=ptable">ptable</a> and <a href="https://cran.r-project.org/package=cellKey">cellKey</a>). Finally, we are working on extending the functionality of the R package <a href="https://cran.r-project.org/package=RJDemetra">RJDemetra</a>, which provides the R interface to <a href="https://github.com/jdemetra">JDemetra+</a>, the officially recommended seasonal adjustment software within the European Statistical System.</p>
+<p>R training for staff is provided regularly by in-house trainers; there are two “core” courses (“Base R” and “Intermediate R”) offered twice a year, and a number of short courses on specific topics/packages (e.g., the <a href="https://cran.r-project.org/package=ggplot2">ggplot2</a> package) offered once a year. In addition, R tools are used in statistical courses (sampling, data integration, data processing and imputation, etc.) to demonstrate the application of methods. More generally, the developed packages and their improvements are promoted through presentations and tutorials at conferences/workshops, including the uRos&nbsp;<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> annual conference.</p>
+<p>Recently, research aimed at investigating the potential use of statistical learning and more generally machine learning techniques for official statistics, also with the aim of exploiting alternative data sources such as big data, led to the adoption of Python. As with R, the approach is bottom-up, as Python is mainly used in the Methodological Directorate. Python is currently being used to produce some experimental statistics: the Social Mood on Economy Index (SMEI) and the imporT ExpoRt networK Analysis (TERRA), a tool for exploratory analysis of Eurostat data on international trade. Other ongoing projects are quite diverse: web mining to integrate and validate information from the Statistical Business Register; estimation of road accidents using big data; estimation of urban greenery using remote sensing images; imputation of education levels in the Register of Persons; estimation of shipping routes, etc., although it is already being used to produce some experimental statistics. A few years ago, it was decided to organise Python courses (basic and advanced) for staff, offered once a year.</p>
+<p>Today, R and Python are the main languages used in the Methodology Directorate, but SAS remains the tool used in some technical units involved in the production of statistics. This is due to a number of factors: ageing staff in production units well trained in SAS and unwilling to lean and move to R; reduction of staff in production due to the inability to replace retired staff and consequently limited resources to ensure a complete migration from SAS to R; the fear of production managers of disrupting the publication of official statistics because of the introduction of new tools with limited support; and an absence of a structure ensuring support on R, contrary to what happens for SAS.</p>
+</section>
+<section id="governance" class="level3">
+<h3 class="anchored" data-anchor-id="governance">Governance</h3>
+<p>For these reasons, it was recently decided to increase efforts to ease the adoption of open source statistical tools in production directorates. The informal network of R experts will be expanded to include methodologists and subject matter experts with a solid knowledge of R and will become the official support structure for R from 2025 onwards. This network will also support the implementation of innovative methodologies (including the development of new packages) and the increase of training opportunities for staff. It should also contribute to the maintenance of packages already developed, also to avoid the problems recently experienced (i.e., the retirement of maintainers).</p>
+<p>A first part of the Istat policy for the governance of the statistical open source software tools is expected to be published by the end of 2024-early 2025. It will mainly deal with statistical-methodological aspects and provide some basic indications on the IT infrastructure, as the two elements are closely linked. The second part, more focused on IT infrastructure and IT requirements, will be published later.</p>
+<p>The first part of the governance of statistical open source software will provide Istat researchers with a set of guidelines and recommended practices for the development of new tools or the adoption (and adaptation) of existing ones; finally, it will redesign the procedures for their approval and dissemination (including guidance on licensing) and maintenance over time.</p>
+<p>The guidelines for the development of new open source statistical software will be published in late 2024 and will include recommendations for writing R code and documenting it according to international standards to facilitate code sharing and reuse. A second level of documentation, tailored for internal purposes only, will document the use of the tools in the specific production process to facilitate modifications/adaptations to specific circumstances encountered in a subsequent replication of the process.</p>
+<p>In the development of the code, much attention is paid to dependency issues in order to limit problems related to changes/disruptions in the maintenance of the packages on which the code depends. This issue will be even more relevant for the adoption and possible adaptation of externally developed open source statistical tools; guidance will be provided on the procedure to be followed: criteria for selection among different potential candidates; preliminary checks to be performed (availability and clarity of documentation; maturity, frequency of updates and possible bug fixes; limitations and dependencies on other tools; available support, etc.); and testing procedures of the selected tools in case studies of increasing complexity. For both developed and acquired/adapted existing tools, the governance policy will provide guidance on their endorsement, dissemination and promotion internally and externally.</p>
+<p>Governance will also provide recommendations for user support, maintenance and updating of the approved tools over time. All defined procedures should be complemented by the identification and establishment of a set of governance bodies with clearly defined roles and responsibilities.</p>
+</section>
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<p>Placeholder.</p>
+<p><strong>Building a community-driven OSS: The SIS-CC experience</strong></p>
+<p><em>Organisation for Economic Co-operation and Development (OECD)</em></p>
+<p>The statistical information system collaboration community (<a href="https://siscc.org">SIS-CC</a>) is <strong>a reference open source community for official statistics</strong>, focusing on product excellence and delivering concrete solutions to common problems through <strong>co-investment and co-innovation</strong>.</p>
+<section id="licences" class="level3">
+<h3 class="anchored" data-anchor-id="licences">Licences</h3>
+<p><strong>SIS-CC’s adherence to the principles of openness and collaboration</strong> is embodied in its strategic choice to use the <a href="https://opensource.org/license/MIT">MIT licence</a> for its open source tools. MIT is a permissive free software licence and places minimal restrictions on the reuse of code, thereby maximising flexibility and fostering an environment where innovation can thrive.</p>
+<p>The decision to select MIT over alternative open source licences, such as <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0</a>, is rooted in the desire for simplicity and minimal legal complexity. While both licences are permissive and encourage open contribution, there are differences that made MIT a better choice for SIS-CC. For example, the concise language and straightforward terms avoid legal jargon, making it very accessible for users to understand and implement correctly. There are fewer restrictions on the redistribution of software compared to Apache 2.0, which requires explicit attribution and changes documentation among other stipulations. With its minimalist approach, MIT is broadly compatible with other licences, allowing for greater interoperability of code across various projects and jurisdictions. It enables easier participation from the community because contributors do not need to worry about complex licence compliance, which can be more challenging with Apache 2.0. By opting for the MIT licence, the SIS-CC reduces the barriers to entry for users and contributors, thereby encouraging widespread adoption and collaboration on the open source project.</p>
+<p>While embracing the simplicity of MIT, SIS-CC also recognises the importance of managing contributions effectively. One mechanism for doing this is through Contributor Licence Agreements (CLAs) that clarifies the terms under which a contributor submits code or content to a project, protecting both the contributor and the organisation by ensuring that the intellectual property is appropriately managed. However, for SIS-CC, it was deemed too complex as it would add an unnecessary overhead to the contribution process, with the potential to deter casual contributors. Instead, the SIS-CC opted for a more automated and centrally controlled review and merge process whereby source code, reuse of libraries, and other components, are checked and validated for potential breaks in the licence chain. So far this has served the SIS-CC well and facilitated a number of contributions from outside of the core maintainers of the project.</p>
+</section>
+<section id="standards" class="level3">
+<h3 class="anchored" data-anchor-id="standards">Standards</h3>
+<p>The SIS-CC plays a pivotal role in driving and promoting the adoption of global open standards within the statistical community, specifically focusing on the Statistical Data and Metadata Exchange (<a href="https://sdmx.org">SDMX</a>) and the Generic Statistical Business Process Model (<a href="https://unece.org/statistics/documents/2019/01/standards/gsbpm-v51">GSBPM</a>). These standards are essential for streamlined and accurate data management across diverse systems and organisations. Through the adoption of these standards, the SIS-CC has enhanced the efficiency, accuracy, and comparability of statistical data through standardised practices, fundamentally altering how data is managed and exchanged globally. Adopting these standards has increased <strong>efficiency and cost-effectiveness</strong> through streamlined data processes, <strong>fostered consistency and comparability</strong> in data across various systems, enhancing overall data integrity, and <strong>facilitated collaboration</strong> within a standardised framework that has simplified data sharing and collaboration among statistical organisations. The adoption of SDMX and GSBPM has prepared organisations to meet future data challenges and integrate into the global statistical ecosystem effectively. The SIS-CC’s robust initiative to standardised statistical practices has not only enhanced operational efficiencies within member organisations but also strengthened the global statistical community’s capability to handle modern data demands, fostering a more connected and resilient statistical landscape. SDMX’s role in facilitating a seamless communication and collaboration across not just statistical teams but also IT within organisations highlights its capacity to catalyse multidisciplinary teamwork, by automating data flows and enhancing user-friendly data exploration, which lays the groundwork for an efficient data-sharing environment.</p>
+<p>Powered by SDMX, the .Stat Suite, being the SIS-CC flagship product, has revolutionised how data is managed, processed, and disseminated from end-to-end, making it more accessible and easier for researchers and analysts to combine and connect in analytical work. The SIS-CC has already started to explore the integration of Artificial Intelligence (AI) with SDMX and the .Stat Suite which promises to unlock even more potential. As AI capabilities evolve, SDMX’s robust semantic framework can serve as a foundation for intelligent, automated data flows, and fostering innovations.</p>
+</section>
+<section id="knowledge-building" class="level3">
+<h3 class="anchored" data-anchor-id="knowledge-building">Knowledge Building</h3>
+<p>The commitment of SIS-CC to enhancing data skills and knowledge led to the establishment of the <a href="https://academy.siscc.org">.Stat Academy</a>. This initiative represents a comprehensive effort to democratise access to self-paced online training, with a focus on enhancing the knowledge of data practitioners in data modelling and SDMX, as well as data toolers in the technologies and tools needed to support the statistical lifecycle. Through a diverse array of free online courses and resources, the .Stat Academy is empowering data professionals worldwide. It leverages a blended learning approach of online courses, hands-on workshops, and collaborative projects to facilitate learning. This multifaceted approach ensures that participants gain practical experience alongside theoretical knowledge. By offering courses on a wide range of topics, the .Stat Academy caters to varying levels of expertise and professional needs, fostering a vibrant, global community of data practitioners who share insights, challenges, and solutions, thus collectively advancing the field of statistical information systems.</p>
+</section>
+<section id="culture" class="level3">
+<h3 class="anchored" data-anchor-id="culture">Culture</h3>
+<p>The journey from a closed community software development to an open source model represented a profound cultural shift for the SIS-CC. This evolution demanded a paradigm change, where openness, transparency, and collective engagement became the cornerstones of development. As SIS-CC members transitioned to open source practices, they embraced a culture that championed collaboration beyond organisational confines, paving the way for more innovative solutions. This shift confronted traditional viewpoints which emphasised proprietary control, urging a reorientation towards shared stewardship and a belief that pooling resources can lead to better outcomes.</p>
+<p>Adopting an open source culture necessitated overcoming numerous challenges. Developers had to recalibrate their approaches to software development—acknowledging that the broader community can contribute valuable insights and code improvements that no single entity could achieve alone. It required rethinking strategies around intellectual property, where inclusivity in innovation assumes priority over exclusivity. The shift to DevSecOps demanded a cultural overhaul where the team worked collaboratively across the entire development cycle, breaking down traditional silos. It required nurturing a mindset that places equal emphasis on speed and security, embedding security considerations from the onset of development rather than being an afterthought. To deal with the resistance that such a profound change brings demanded a concerted effort in training, change management, and the establishment of new norms.</p>
+</section>
+<section id="governance-1" class="level3">
+<h3 class="anchored" data-anchor-id="governance-1">Governance</h3>
+<p>The SIS-CC operates within a multi-tier community ecosystem, underpinning a sustainable business model that promotes co-innovation and co-investment. This multifaceted governance structure is essential for managing the dynamics of collaboration among diverse organisations and partners. Central to its governance is the multi-tier community ecosystem, meticulously designed to foster balanced user growth while ensuring the retention of agility and the maintenance of product excellence. This structure categorises members into different tiers based on the nature and extent of their contribution. <strong>Tier 1 organisations</strong> are pivotal, providing financial and in-kind contributions. This tier has the potential for receiving additional grants, reflecting a deep investment in the community and product advancement. <strong>Tier 2 organisations</strong> benefit either through commercial avenues or through institutional backing, like that provided by the ILO LMIS&nbsp;<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a> project. This ensures a diverse range of organisational types and resources are contributing to and benefitting from the community. <strong>Tier 3 organisations</strong> access the Community products through self-service tools, such as Gitlab, documentation, the .Stat Academy, and issue tickets, enabling broader, more accessible participation.</p>
+<p>The governance philosophy of the SIS-CC champions an inclusive strategy, laying its foundations on the Community Foundations: Community Driven Dynamics; Open source Delivery; Full Data Lifecycle; Componentised Architecture; and Systematic User Research. These foundations are critical in a shared journey towards achieving mutual objectives, enhancing collaboration, and solidifying our collective value proposition.</p>
+</section>
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<p>Placeholder.</p>
+<p><strong>Transforming a software into OSS at SORS</strong></p>
+<p><em>Serbian National Statistical Institute</em></p>
+<section id="introduction-2" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-2">Introduction</h3>
+<p>The Statistical Office of the Republic of Serbia (SORS) has over the past 15 years developed the Istraživanje (IST)&nbsp;<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a>, a metadata driven statistical collection and production solution aligned with GSBPM, to meet the growing needs of statistical data processing in a rapidly evolving technological environment. The IST platform was developed in response to the complexity of statistical data handling, which requires a flexible, modular, and metadata-driven approach to ensure efficiency across the statistical lifecycle.</p>
+<p>Since its launch in 2006, IST has been deployed in several NSOs, including those in Kyrgyzstan, Montenegro, Bosnia and Herzegovina, and Albania. The platform was shared through Memorandums of Understanding (MoUs) and provided to partner NSOs as free software. As part of these agreements, SORS supplied the full source code and ongoing support, further demonstrating its commitment to international cooperation and statistical innovation. Over time, IST evolved through continuous feedback from these partners, further refining its features and capabilities.</p>
+<p><em>Collaborative Effort</em></p>
+<p>Although IST was entirely developed by SORS, its expansion and refinement were facilitated by collaborations with other NSOs. These partnerships enabled SORS to adapt IST to different country-specific contexts while ensuring that the core system remained robust, flexible, and adaptable. The software’s success lies in support for various file formats, languages, its modular design (which allows for integration with additional tools widespread among NSOs), and its comprehensive metadata management features that guide the statistical process from data collection to dissemination.</p>
+<p><em>Key Features of IST</em></p>
+<p>IST is a metadata-driven system designed to ensure seamless data management throughout the statistical process. Its architecture allows for real-time data entry, validation, and processing, making it an essential tool for modern statistical operations. The key features of IST include:</p>
+<ul>
+<li><strong>Metadata-Driven Architecture</strong>: IST leverages metadata to control data processing workflows. This design ensures consistency and efficiency across different stages of data collection, validation, and analysis.<br>
+</li>
+<li><strong>Modular Design</strong>: The platform’s architecture allows independent modules to be added or modified without affecting the entire system. This flexibility makes IST scalable and adaptable to various statistical requirements.<br>
+</li>
+<li><strong>Advanced Reporting Capabilities</strong>: IST supports real-time reporting in multiple formats, such as Excel, JSON, and XML, facilitating easy data dissemination.</li>
+</ul>
+</section>
+<section id="steps-toward-open-source" class="level3">
+<h3 class="anchored" data-anchor-id="steps-toward-open-source">Steps Toward Open Source</h3>
+<p>In recent years, SORS has recognised the importance of promoting open source solutions to foster collaboration and enhance the usability of IST across multiple regions. As part of this strategy, SORS has initiated a comprehensive plan to release IST as an open source product, adhering to widely accepted licensing and contribution practices.</p>
+<p><em>IST Productisation Steps</em></p>
+<p>The transition to open source requires a structured and phased approach. In collaboration with international partners and legal experts, SORS is devising the plans for making IST open source:</p>
+<ol type="1">
+<li><strong>Defining Governance and Contribution Models</strong>: A key aspect of the open source transition is the establishment of clear governance models based on the foundations of openness, collaboration, and sustainability. SORS aims to implement a Contributor Licence Agreement (CLA) to ensure that all contributions are legally bound to be licenced back to SORS, preserving control over the project’s direction (lead by the Project Management Committee) while encouraging community contributions.<br>
+</li>
+<li><strong>Technical Documentation and Support</strong>: IST’s open source version will be accompanied by comprehensive documentation, including user and developer manuals. SORS will continue to provide remote support to partner NSOs to ensure smooth implementation and adoption of the open source version.<br>
+</li>
+<li><strong>Licensing Strategy</strong>: Following a thorough review of different open source licences, SORS decided to use the Apache licence 2.0 with additional clauses to restrict the commercial redistribution of IST. This decision ensures that IST remains freely available for statistical offices and developers, while retaining legal protections over its intellectual property. The final decision will be made after thorough consideration by legal experts.<br>
+</li>
+<li><strong>Publishing and Maintenance</strong>: IST’s source code will be published on an open source platform, such as GitHub / GitLab, allowing for easy access and collaboration. The platform will also serve as a space for tracking issues, managing contributions, and providing updates.</li>
+</ol>
+</section>
+<section id="licences-1" class="level3">
+<h3 class="anchored" data-anchor-id="licences-1">Licences</h3>
+<p>Two open source licences were considered for IST’s transition to open source: the <strong>MIT licence</strong> and the <strong>Apache licence 2.0</strong>. After careful evaluation, SORS opted for the <strong>Apache licence 2.0</strong>, which offers both permissive use and patent protection. This licence allows IST to be widely adopted while safeguarding SORS’s intellectual property rights.</p>
+<p>Key factors influencing this decision include:</p>
+<ul>
+<li><strong>Patent Protection</strong>: Apache 2.0 includes an explicit patent grant, offering legal protection against patent-related disputes.<br>
+</li>
+<li><strong>Broad Usage and Modification Rights</strong>: The licence allows other statistical offices and developers to use, modify, and distribute IST, while ensuring that all modifications are licenced back to SORS.<br>
+</li>
+<li><strong>Attribution</strong>: All derivative works and redistributions must include an attribution notice recognizing SORS as the original developer.</li>
+</ul>
+<p><em>Contributor Licence Agreement</em></p>
+<p>To manage contributions effectively, SORS plans to implement a Contributor Licence Agreement (CLA). The CLA will ensure that all contributions to IST are licenced back to SORS, allowing the organisation to maintain control over the software’s development while promoting collaboration with the wider open source community.</p>
+<p>The key elements of the CLA include:</p>
+<ul>
+<li><strong>Modification Rights</strong>: Contributors can modify IST for their internal use.<br>
+</li>
+<li><strong>No Redistribution</strong>: Contributors are not allowed to redistribute IST or its modified versions to third parties.<br>
+</li>
+<li><strong>No Commercial Use</strong>: IST and its derivatives cannot be used for commercial gain without explicit consent from SORS.</li>
+</ul>
+</section>
+<section id="conclusion" class="level3">
+<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
+<p>The transition of IST to an open source product represents a significant move by SORS to promote innovation and collaboration in the field of statistical data processing. While the specific licensing model for IST is still under consideration, SORS is carefully evaluating options, including the Apache licence 2.0, MIT and other permissive licence, to ensure the best balance between fostering global collaboration and protecting the integrity of the software.</p>
+<p>By developing a flexible CLA, SORS aims to create a structured and collaborative environment where contributions from the broader statistical community, including universities, researchers, and developers, can enhance IST while ensuring its continued alignment with SORS’s goals. As the transition progresses, SORS remains committed to maintaining IST’s reputation as a modern, scalable, and secure solution for statistical data management, ensuring that it continues to meet the needs of NSOs worldwide.</p>
+</section>
 </div>
 <div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-<p>Placeholder.</p>
+<p><strong>Sharing OSS across communities - The Awesome List for Official Statistics Software</strong></p>
+<p><em>Statistics Netherlands</em></p>
+<section id="introduction-3" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-3">Introduction</h3>
+<p>Open source software offers significant benefits for producing official statistics, including cost savings, improved quality, greater flexibility, and the potential to foster standardisation. However, navigating the vast landscape of open source software packages already available within the statistical community can be challenging. Understanding which software exists, its maturity level, and its suitability for specific tasks is crucial for the reuse of statistical building blocks.</p>
+<p>To address this challenge, in 2017 a number of conference participants including members of Statistics Netherlands started the <em>awesome list of official statistics software</em>&nbsp;<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a>. It is a community approach to facilitate knowledge sharing among statistical organisations and to promote the adoption of open source solutions. The list quickly grew from the software the initiators were involved in into an extensive catalogue of mature open source solutions in the ESS&nbsp;<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a>.</p>
+</section>
+<section id="explanation-of-the-awesome-list-of-statistical-software" class="level3">
+<h3 class="anchored" data-anchor-id="explanation-of-the-awesome-list-of-statistical-software">Explanation of the awesome list of statistical software</h3>
+<p>Sharing statistical software among institutes has been a valuable practice for years, particularly in areas like disclosure control, data editing, collection, and dissemination. While a few well-established solutions have been widely adopted, the current software landscape for official statistics is far more complex and dynamic than in former years. Numerous specialised packages are continually being developed, making it challenging to maintain a comprehensive overview and increasing the risk of redundant development.</p>
+<p>To address this issue, the awesome list of official statistics software was created, inspired by the popular concept of community-driven knowledge sharing in the ‘awesome list concept’&nbsp;<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a>. This list serves as a valuable resource for discovering and utilising generic official statistics software. The list has grown significantly since its inception, now featuring over 130 open source packages that are readily available, well-maintained, and actively used by statistical offices worldwide. It includes packages for automated access to official statistics output and is itself developed and maintained in an open source spirit.</p>
+<p>The concept of this list is not to replicate information but as much as possible to link to the information maintained by the respective open source developer(s). Hence, each entry on the list provides a link to the software download, a brief description, and essential metadata such as the latest version, last commit, and licence. This information is automatically extracted from the packaging system metadata, ensuring consistency and ease of use.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets\img\image1.png" class="img-fluid figure-img" alt="Figure 1 showcases examples of entries on the list"></p>
+<figcaption class="figure-caption">Figure 1: Open source software on the awesome list</figcaption>
+</figure>
+</div>
+<p>To provide users with a clear understanding of the software’s applications on the list, it is organised according to the Generic Statistical Business Process Model (GSBPM). Figure 2 illustrates the distribution of the 135 items across the various GSBPM processes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets\img\image2.png" class="img-fluid figure-img" alt="Figure 2: Software on the list by GSBPM"></p>
+<figcaption class="figure-caption">Figure 2: Software on the list by GSBPM</figcaption>
+</figure>
+</div>
+<p>Figure 3 shows the distribution of programming languages of items on the list. The vast majority of items are written in R, which shows the excellent software sharing methods in this community. Figure 4 shows the licences used on the list. GPL is the most popular licence followed by MIT and EUPL.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets\img\image3.png" class="img-fluid figure-img" alt="Figure 3: The most popular programming languages among items on the list"></p>
+<figcaption class="figure-caption">Figure 3: The most popular programming languages among items on the list</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets\img\image4.png" class="img-fluid figure-img" alt="Figure 4: Open source licences of software on the list"></p>
+<figcaption class="figure-caption">Figure 4: Open source licences of software on the list</figcaption>
+</figure>
+</div>
+</section>
+<section id="how-the-awesome-list-contributes-to-the-foss-in-official-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-awesome-list-contributes-to-the-foss-in-official-statistics">How the awesome list contributes to the FOSS in official statistics</h3>
+<p>The list has proven to be a valuable tool for sharing knowledge about existing open source solutions among different user communities in the ESS, either methodologists, statisticians, IT specialists, or management&nbsp;<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a>. Suggestions for changes or additions come from statistical organisations around the world and functionality suggestions for adding compatibility information, maturity indicators, and popularity metrics are documented on the GitHub repository itself. Concluding we can say that this list, maintained by many, has already helped software reuse among statistical organisations and as long as the community actively uses and maintains it, it will continue this important role.</p>
+</section>
 </div>
 </div>
 </div>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Alexander Kowarik, Mark van der Loo (2018). Using R in the statistical office: the experience of statistics Netherlands and Statistics Austria. Romanian Statistical Review 1/2018 15—29<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>J. Pannekoek, S. Scholtus, M. van der Loo (2013). Automated and manual data editing: a view on process design and methodology. Journal of Official Statistics 29 511-537<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>MPJ van der Loo and E. de Jonge (2018) Statistical data cleaning with applications in R. John Wiley &amp; Sons. ISBN: 978-1-118-89715-7<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p><a href="https://www.nass.usda.gov/">https://www.nass.usda.gov/</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>MPJ van der Loo, E de Jonge (2021). Data Validation Infrastructure for R. Journal of Statistical Software 1–22 97<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>MPJ van der Loo, E de Jonge (2020). Data Validation. In Wiley StatsRef: Statistics Reference Online, pages 1-7. American Cancer Society<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>E de Jonge E, MPJ van der Loo (2023). errorlocate: Locate Errors with Validation Rules. R package version 1.1.1, <a href="https://CRAN.R-project.org/package=errorlocate">https://CRAN.R-project.org/package=errorlocate</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>MPJ van der Loo, E de Jonge (2021). deductive: Data Correction and Imputation Using Deductive Methods. R package version 1.0.0, <a href="https://CRAN.R-project.org/package=deductive">https://CRAN.R-project.org/package=deductive</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>MPJ van der Loo (2024). Split-Apply-Combine with Dynamic Grouping. Journal of Statistical Software (Accepted for publication)<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>MPJ van der Loo (2022). simputation: Simple Imputation. R package version 0.2.8, <a href="https://CRAN.R-project.org/package=simputation">https://CRAN.R-project.org/package=simputation</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>MPJ van der Loo (2021). Monitoring data in R with the lumberjack package. Journal of Statistical Software 98 1—11<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>Mark P.J. van der Loo (2021). A Method for Deriving Information from Running R Code. The R Journal 13 42–52<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p>van der Laan, D. J. (2022). reclin2: a Toolkit for Record Linkage and Deduplication. R Journal, 14(2)<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>Linus’s Law: <a href="https://en.wikipedia.org/wiki/Linus%27s_law">https://en.wikipedia.org/wiki/Linus%27s_law</a><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p><a href="https://www.istat.it/en/classifications-and-tools/methods-and-software-of-the-statistical-process/">https://www.istat.it/en/classifications-and-tools/methods-and-software-of-the-statistical-process/</a><a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p><a href="https://cloud.r-project.org/web/views/OfficialStatistics.html">https://cloud.r-project.org/web/views/OfficialStatistics.html</a><a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p><a href="https://github.com/data-cleaning">https://github.com/data-cleaning</a><a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p><a href="https://r-project.ro/conferences.html">https://r-project.ro/conferences.html</a><a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p><a href="https://ilostat.ilo.org/resources/labour-market-information-systems/">https://ilostat.ilo.org/resources/labour-market-information-systems/</a><a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p><a href="http://istportal.net">http://istportal.net</a><a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p><a href="https://github.com/SNStatComp/awesome-official-statistics-software">https://github.com/SNStatComp/awesome-official-statistics-software</a><a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>Olav ten Bosch, Mark van der Loo, Alexander Kowarik, (2020), The awesome list of official statistical software: 100 … and counting, The Use of R in Official Statistics - uRos202<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>Awesome list concept by Sindre Sorhus: <a href="https://github.com/sindresorhus/awesome">https://github.com/sindresorhus/awesome</a><a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>M. van der Loo, O. ten Bosch, (2023), Free and Open Source Software at Statistics Netherlands, Conference of European Statisticians, Seventy-first plenary session, Geneva, 22-23 June 2023<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
