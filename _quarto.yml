@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+
+page-navigation: true
   
 website:
   title: "HLG-MOS Open-Source Software Charter"
@@ -20,9 +22,14 @@ website:
       - icon: linkedin
         href: https://www.linkedin.com/showcase/unece-modernisation-of-official-statistics/
       - icon: github
-        href: https://github.com/UNECE/OSS
+        menu: 
+          - text: Source Code
+            href: https://github.com/UNECE/OSS
+          - text: Submit an Issue/Request
+            href: https://github.com/unece/oss/issues
   sidebar:
     - id: "intro"
+      title: "intro_sb"
       style: "docked"
       background: "light"
       contents:
@@ -38,12 +45,14 @@ website:
     center: |
       [![ModernStats Logo](/assets/img/modernstats_footer.png){fig-alt="ModernStats" width=110px}](https://unece.org/statistics/modernstats)
   favicon: /assets/img/oss_charter_logo.png
+  back-to-top-navigation: true
 
 format:
   html:
     theme: cerulean
     css: /assets/styling/styles.css
     toc: true
+    toc-location: left
+
 
 editor: source
-

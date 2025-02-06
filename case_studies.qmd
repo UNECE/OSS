@@ -1,6 +1,13 @@
 ---
 title: "Case Studies"
 sidebar: false
+
+format:
+  html:
+    toc: true
+    toc-location: right
+# The toc-location line here is to fix an issue where a psudo sidebar would appear, which is possibily related to not using the standard html theme in _quarto.yml
+
 include-in-header:
   text: |
     <script src="assets/js/misc.js"></script>

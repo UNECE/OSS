@@ -1,5 +1,8 @@
 ---
 pagetitle: "Index"
+sidebar: 
+  id: "intro"
+  background: "light"
 format:
   html: 
     body-width: 9000px

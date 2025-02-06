@@ -74,7 +74,7 @@
     "href": "background.html#target-audience",
     "title": "Background",
     "section": "Target Audience",
-    "text": "Target Audience\nThis site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods openly while producing official statistics. .\n\n\n\n\n\n\nNote\n\n\n\nWeb site under construction"
+    "text": "Target Audience\nThis site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods and tools openly while producing official statistics. .\n\n\n\n\n\n\nNote\n\n\n\nWeb site under construction"
   },
   {
     "objectID": "case_studies.html#footnotes",
@@ -88,7 +88,7 @@
     "href": "index.html",
     "title": "HLG-MOS Open-Source Software Charter",
     "section": "",
-    "text": "Open-source software is an essential for producing official statistics in an open, sharable, and transparent matter. The following principles intended to guide both the production and adoption of open-source software for statistical production.\n\n\n\n\n\n\nOpen by default\n\n\n\n\n\nWork in the open\n\n\n\n\n\nImprove and give back\n\n\n\n\n\nThink generic building blocks\n\n\n\n\n\n\n\nTest, package and document\n\n\n\n\n\nChoose permissive\n\n\n\n\n\nPromote"
+    "text": "Open-source software is an essential for producing official statistics in an open, sharable, and transparent matter. The following principles intended to guide both the production and adoption of open-source software for statistical production.\n\n\n\n\n\n\nOpen by default\n\n\n\n\n\nWork in the open\n\n\n\n\n\nImprove and give back\n\n\n\n\n\nThink generic building blocks\n\n\n\n\n\n\n\nTest, package and document\n\n\n\n\n\nChoose permissive\n\n\n\n\n\nPromote\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "major_topics.html",

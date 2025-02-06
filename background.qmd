@@ -33,7 +33,7 @@ The project, led by Carlo Vaccari (UNECE Project Manager), was composed of aroun
 
 ## Target Audience
 
-This site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods openly while producing official statistics.
+This site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods and tools openly while producing official statistics.
 .
 
 ::: callout-note
