@@ -5,7 +5,7 @@ project:
 page-navigation: true
   
 website:
-  title: "HLG-MOS Open-Source Software Charter"
+  title: "HLG-MOS Open Source Software"
   navbar:
     logo: "assets/img/oss_charter_logo.png"
     left:
@@ -27,18 +27,7 @@ website:
             href: https://github.com/UNECE/OSS
           - text: Submit an Issue/Request
             href: https://github.com/unece/oss/issues
-  sidebar:
-    - id: "intro"
-      title: "intro_sb"
-      style: "docked"
-      background: "light"
-      contents:
-      - text: "Who we are"
-        href: "background.html#who-we-are"
-      - text: "Target audience"
-        href: "background.html#target-audience"
-      - text: "Getting started with OS"
-        href: "resources.html#getting-started-with-open-source"
+
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
     left: This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 

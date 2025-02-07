@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>HLG-MOS Open-Source Software Charter - Case Studies</title>
+<title>HLG-MOS Open Source Software - Case Studies</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="./assets/styling/styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
     <img src="./assets/img/oss_charter_logo.png" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">HLG-MOS Open-Source Software Charter</span>
+    <span class="navbar-title">HLG-MOS Open Source Software</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -136,9 +136,49 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#Data-Cleaning" id="toc-Data-Cleaning" class="nav-link active" data-scroll-target="#Data-Cleaning"><strong>Data Cleaning</strong></a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-r-based-ecosystem" id="toc-the-r-based-ecosystem" class="nav-link" data-scroll-target="#the-r-based-ecosystem">The R based ecosystem</a></li>
+  <li><a href="#how-working-in-foss-contributes-to-the-success-of-the-ecosystem" id="toc-how-working-in-foss-contributes-to-the-success-of-the-ecosystem" class="nav-link" data-scroll-target="#how-working-in-foss-contributes-to-the-success-of-the-ecosystem">How working in FOSS contributes to the success of the ecosystem</a></li>
+  </ul></li>
+  <li><a href="#Istat" id="toc-Istat" class="nav-link" data-scroll-target="#Istat"><strong>Istat</strong></a>
+  <ul class="collapse">
+  <li><a href="#introduction-1" id="toc-introduction-1" class="nav-link" data-scroll-target="#introduction-1">Introduction</a></li>
+  <li><a href="#governance" id="toc-governance" class="nav-link" data-scroll-target="#governance">Governance</a></li>
+  </ul></li>
+  <li><a href="#SIS-CC" id="toc-SIS-CC" class="nav-link" data-scroll-target="#SIS-CC"><strong>SIS-CC</strong></a>
+  <ul class="collapse">
+  <li><a href="#licences" id="toc-licences" class="nav-link" data-scroll-target="#licences">Licences</a></li>
+  <li><a href="#standards" id="toc-standards" class="nav-link" data-scroll-target="#standards">Standards</a></li>
+  <li><a href="#knowledge-building" id="toc-knowledge-building" class="nav-link" data-scroll-target="#knowledge-building">Knowledge Building</a></li>
+  <li><a href="#culture" id="toc-culture" class="nav-link" data-scroll-target="#culture">Culture</a></li>
+  <li><a href="#governance-1" id="toc-governance-1" class="nav-link" data-scroll-target="#governance-1">Governance</a></li>
+  </ul></li>
+  <li><a href="#SORS" id="toc-SORS" class="nav-link" data-scroll-target="#SORS"><strong>SORS</strong></a>
+  <ul class="collapse">
+  <li><a href="#introduction-2" id="toc-introduction-2" class="nav-link" data-scroll-target="#introduction-2">Introduction</a></li>
+  <li><a href="#steps-toward-open-source" id="toc-steps-toward-open-source" class="nav-link" data-scroll-target="#steps-toward-open-source">Steps Toward Open Source</a></li>
+  <li><a href="#licences-1" id="toc-licences-1" class="nav-link" data-scroll-target="#licences-1">Licences</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  </ul></li>
+  <li><a href="#Awesome-List" id="toc-Awesome-List" class="nav-link" data-scroll-target="#Awesome-List"><strong>Awesome List for Official Statistics</strong></a>
+  <ul class="collapse">
+  <li><a href="#introduction-3" id="toc-introduction-3" class="nav-link" data-scroll-target="#introduction-3">Introduction</a></li>
+  <li><a href="#explanation-of-the-awesome-list-of-statistical-software" id="toc-explanation-of-the-awesome-list-of-statistical-software" class="nav-link" data-scroll-target="#explanation-of-the-awesome-list-of-statistical-software">Explanation of the awesome list of statistical software</a></li>
+  <li><a href="#how-the-awesome-list-contributes-to-the-foss-in-official-statistics" id="toc-how-the-awesome-list-contributes-to-the-foss-in-official-statistics" class="nav-link" data-scroll-target="#how-the-awesome-list-contributes-to-the-foss-in-official-statistics">How the awesome list contributes to the FOSS in official statistics</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,10 +200,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="tabset-margin-container"></div><div class="panel-tabset nav-pills">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true"><strong>Data Cleaning</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false"><strong>Istat</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false"><strong>SIS-CC</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false"><strong>SORS</strong></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false"><strong>Awesome List for Official Statistics</strong></a></li></ul>
-<div class="tab-content nav-pills">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<section id="Data-Cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="Data-Cleaning"><strong>Data Cleaning</strong></h2>
 <p><strong>Building a FOSS ecosystem for statistical data processing</strong></p>
 <p><em>Statistics Netherlands</em></p>
 <section id="introduction" class="level3">
@@ -239,8 +277,9 @@ ul.task-list li input[type="checkbox"] {
 <p>In the first place there is a large FOSS community in R that provides help, a packaging system, and also an infrastructure for developing, testing, documenting and publishing packages. The fact that this infrastructure, including the presence of a global informal and helpful community, exists has been extremely helpful during design and development of the packages. The usefulness of being able to directly contact the people who develop the infrastructure one is using is hard to overstate.</p>
 <p>Secondly, publishing the packages in open source immediately gives a large audience the opportunity to try the product: <em>given enough eyeballs, all bugs are shallow</em> &nbsp;<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a>. Enthusiastic users are able to contribute new use cases, issues, and documentation, which overall has contributed to creating more general and more robust software.</p>
 </section>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+</section>
+<section id="Istat" class="level2">
+<h2 class="anchored" data-anchor-id="Istat"><strong>Istat</strong></h2>
 <p><strong>Adoption of OSS and governance efforts in Istat</strong></p>
 <p><em>Italian National Institute of Statistics (Istat)</em></p>
 <section id="introduction-1" class="level3">
@@ -263,8 +302,9 @@ ul.task-list li input[type="checkbox"] {
 <p>In the development of the code, much attention is paid to dependency issues in order to limit problems related to changes/disruptions in the maintenance of the packages on which the code depends. This issue will be even more relevant for the adoption and possible adaptation of externally developed open source statistical tools; guidance will be provided on the procedure to be followed: criteria for selection among different potential candidates; preliminary checks to be performed (availability and clarity of documentation; maturity, frequency of updates and possible bug fixes; limitations and dependencies on other tools; available support, etc.); and testing procedures of the selected tools in case studies of increasing complexity. For both developed and acquired/adapted existing tools, the governance policy will provide guidance on their endorsement, dissemination and promotion internally and externally.</p>
 <p>Governance will also provide recommendations for user support, maintenance and updating of the approved tools over time. All defined procedures should be complemented by the identification and establishment of a set of governance bodies with clearly defined roles and responsibilities.</p>
 </section>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+</section>
+<section id="SIS-CC" class="level2">
+<h2 class="anchored" data-anchor-id="SIS-CC"><strong>SIS-CC</strong></h2>
 <p><strong>Building a community-driven OSS: The SIS-CC experience</strong></p>
 <p><em>Organisation for Economic Co-operation and Development (OECD)</em></p>
 <p>The statistical information system collaboration community (<a href="https://siscc.org">SIS-CC</a>) is <strong>a reference open source community for official statistics</strong>, focusing on product excellence and delivering concrete solutions to common problems through <strong>co-investment and co-innovation</strong>.</p>
@@ -293,8 +333,9 @@ ul.task-list li input[type="checkbox"] {
 <p>The SIS-CC operates within a multi-tier community ecosystem, underpinning a sustainable business model that promotes co-innovation and co-investment. This multifaceted governance structure is essential for managing the dynamics of collaboration among diverse organisations and partners. Central to its governance is the multi-tier community ecosystem, meticulously designed to foster balanced user growth while ensuring the retention of agility and the maintenance of product excellence. This structure categorises members into different tiers based on the nature and extent of their contribution. <strong>Tier 1 organisations</strong> are pivotal, providing financial and in-kind contributions. This tier has the potential for receiving additional grants, reflecting a deep investment in the community and product advancement. <strong>Tier 2 organisations</strong> benefit either through commercial avenues or through institutional backing, like that provided by the ILO LMIS&nbsp;<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a> project. This ensures a diverse range of organisational types and resources are contributing to and benefitting from the community. <strong>Tier 3 organisations</strong> access the Community products through self-service tools, such as Gitlab, documentation, the .Stat Academy, and issue tickets, enabling broader, more accessible participation.</p>
 <p>The governance philosophy of the SIS-CC champions an inclusive strategy, laying its foundations on the Community Foundations: Community Driven Dynamics; Open source Delivery; Full Data Lifecycle; Componentised Architecture; and Systematic User Research. These foundations are critical in a shared journey towards achieving mutual objectives, enhancing collaboration, and solidifying our collective value proposition.</p>
 </section>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+</section>
+<section id="SORS" class="level2">
+<h2 class="anchored" data-anchor-id="SORS"><strong>SORS</strong></h2>
 <p><strong>Transforming a software into OSS at SORS</strong></p>
 <p><em>Statistical Office of the Republic of Serbia (SORS)</em></p>
 <section id="introduction-2" class="level3">
@@ -355,8 +396,9 @@ ul.task-list li input[type="checkbox"] {
 <p>The transition of IST to an open source product represents a significant move by SORS to promote innovation and collaboration in the field of statistical data processing. While the specific licensing model for IST is still under consideration, SORS is carefully evaluating options, including the Apache licence 2.0, MIT and other permissive licence, to ensure the best balance between fostering global collaboration and protecting the integrity of the software.</p>
 <p>By developing a flexible CLA, SORS aims to create a structured and collaborative environment where contributions from the broader statistical community, including universities, researchers, and developers, can enhance IST while ensuring its continued alignment with SORS’s goals. As the transition progresses, SORS remains committed to maintaining IST’s reputation as a modern, scalable, and secure solution for statistical data management, ensuring that it continues to meet the needs of NSOs worldwide.</p>
 </section>
-</div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+</section>
+<section id="Awesome-List" class="level2">
+<h2 class="anchored" data-anchor-id="Awesome-List"><strong>Awesome List for Official Statistics</strong></h2>
 <p><strong>Sharing OSS across communities - The Awesome List for Official Statistics Software</strong></p>
 <p><em>Statistics Netherlands</em></p>
 <section id="introduction-3" class="level3">
@@ -399,12 +441,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="how-the-awesome-list-contributes-to-the-foss-in-official-statistics" class="level3">
 <h3 class="anchored" data-anchor-id="how-the-awesome-list-contributes-to-the-foss-in-official-statistics">How the awesome list contributes to the FOSS in official statistics</h3>
 <p>The list has proven to be a valuable tool for sharing knowledge about existing open source solutions among different user communities in the ESS, either methodologists, statisticians, IT specialists, or management&nbsp;<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a>. Suggestions for changes or additions come from statistical organisations around the world and functionality suggestions for adding compatibility information, maturity indicators, and popularity metrics are documented on the GitHub repository itself. Concluding we can say that this list, maintained by many, has already helped software reuse among statistical organisations and as long as the community actively uses and maintains it, it will continue this important role.</p>
+
+
 </section>
-</div>
-</div>
-</div>
-
-
+</section>
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>

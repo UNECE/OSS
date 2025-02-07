@@ -2,18 +2,10 @@
 title: "Case Studies"
 sidebar: false
 
-format:
-  html:
-    toc: true
-    toc-location: right
-# The toc-location line here is to fix an issue where a psudo sidebar would appear, which is possibily related to not using the standard html theme in _quarto.yml
-
 include-in-header:
   text: |
     <script src="assets/js/misc.js"></script>
 ---
-
-::: {.panel-tabset .nav-pills}
 
 ## **Data Cleaning** {#Data-Cleaning}
 
@@ -237,7 +229,6 @@ Figure 3 shows the distribution of programming languages of items on the list. T
 
 The list has proven to be a valuable tool for sharing knowledge about existing open source solutions among different user communities in the ESS, either methodologists, statisticians, IT specialists, or management\ [^25]. Suggestions for changes or additions come from statistical organisations around the world and functionality suggestions for adding compatibility information, maturity indicators, and popularity metrics are documented on the GitHub repository itself. Concluding we can say that this list, maintained by many, has already helped software reuse among statistical organisations and as long as the community actively uses and maintains it, it will continue this important role.
 
-:::
 
 [^2]:  Alexander Kowarik, Mark van der Loo (2018). Using R in the statistical office: the experience of statistics Netherlands and Statistics Austria. Romanian Statistical Review 1/2018 15—29
 
