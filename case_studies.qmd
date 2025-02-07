@@ -141,7 +141,7 @@ The governance philosophy of the SIS-CC champions an inclusive strategy, laying 
 
 **Transforming a software into OSS at SORS**
 
-*Serbian National Statistical Institute*
+*Statistical Office of the Republic of Serbia (SORS)*
 
 ### Introduction
 
@@ -159,7 +159,7 @@ IST is a metadata-driven system designed to ensure seamless data management thro
 
 -   **Metadata-Driven Architecture**: IST leverages metadata to control data processing workflows. This design ensures consistency and efficiency across different stages of data collection, validation, and analysis.\
 -   **Modular Design**: The platform’s architecture allows independent modules to be added or modified without affecting the entire system. This flexibility makes IST scalable and adaptable to various statistical requirements.\
--   **Advanced Reporting Capabilities**: IST supports real-time reporting in multiple formats, such as Excel, JSON, and XML, facilitating easy data dissemination.
+-   **Advanced Reporting Capabilities**: IST supports real-time reporting in multiple formats, such as Excel, JSON, CSV, TXT, and XML, facilitating easy data dissemination.
 
 ### Steps Toward Open Source
 

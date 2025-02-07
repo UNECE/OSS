@@ -24,7 +24,7 @@ The project, led by Carlo Vaccari (UNECE Project Manager), was composed of aroun
 * Akmaral Tokbergenova & Kairat Kipatov (Statistics Kazakhstan)  
 * Olav ten Bosch & Mark van der Loo (Statistics Netherlands)  
 * Pubudu Senanayake & Kevin Townend (Statistics New Zealand)  
-* Nikola Orlic, Aleksandra Skoko Despenic, Nevena Mitrovic, Mira Nikic & Nevena Pavlovic (Statistical Office of the Republic of Serbia)  
+* Nevena Mitrovic, Aleksandra Skoko Despenic, Mira Nikic & Nikola Orlic (Statistical Office of the Republic of Serbia) 
 * Karl McKenzie, Martin Ralphs & Ken Rennoldson (UK ONS)  
 * Matyas Meszaros (Eurostat)  
 * Jonathan Challener (OECD)  
