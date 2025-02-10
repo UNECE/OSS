@@ -3,6 +3,8 @@ pagetitle: "Page Not Found"
 format: 
   html: 
     toc: false
+    grid:
+      sidebar-width: 0px
 ---
 
 ::: {.centered}
