@@ -6,7 +6,7 @@ page-navigation: true
   
 website:
   title: "HLG-MOS Open Source Software"
-  site-url: "https://unece.github.io/OSS/"
+  site-path: ./
   navbar:
     logo: "assets/img/oss_charter_logo.png"
     left:
