@@ -1,7 +1,8 @@
 ---
 pagetitle: "Page Not Found"
-sidebar: false
-toc: false
+format: 
+  html: 
+    toc: false
 ---
 
 # 404
