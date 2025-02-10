@@ -13,28 +13,27 @@ Consequently, the Charter and its principles herein on open-source software in o
 
 ## Who we are
 
-This site is an important deliverable of the Statistical Open Source Software project that was conducted over the 2024 period, and mandated by the UNECE High-Level Group for the Modernisation of Official Statistics ([HLG-MOS](https://unece.org/statistics/networks-of-experts/high-level-group-modernisation-statistical-production-and-services)) following its annual meeting in November 2023\.
+This site is an important deliverable of the Statistical Open Source Software project that was conducted over the 2024 period, and mandated by the UNECE High-Level Group for the Modernisation of Official Statistics ([HLG-MOS](https://unece.org/statistics/networks-of-experts/high-level-group-modernisation-statistical-production-and-services)) following its annual meeting in November 2023.
 
 The project, led by Carlo Vaccari (UNECE Project Manager), was composed of around 30 experts, drawing from national statistics and other institutions as well as international organisations. The following experts kindly dedicated their time and contributed their knowledge, experience, and expertise to this project.
 
-* Craig Lindenmayer (Australian Bureau of Statistics)  
-* Kate Burnett-Isaacs (Infrastructure Canada), who lead the Governance & Maintenance sub-team  
-* Mireille Paquette, Li Wang, Christie Glover, & Jonathan Wylie (Statistics Canada)  
-* Marcello D'Orazio, Lorenzo Asti, Francesco Isidori, Pierpaolo Massoli & Samanta Pietropaoli (Italian National Institute of Statistics)  
-* Akmaral Tokbergenova & Kairat Kipatov (Statistics Kazakhstan)  
-* Olav ten Bosch & Mark van der Loo (Statistics Netherlands)  
-* Pubudu Senanayake & Kevin Townend (Statistics New Zealand)  
-* Nevena Mitrovic, Aleksandra Skoko Despenic, Mira Nikic & Nikola Orlic (Statistical Office of the Republic of Serbia) 
-* Karl McKenzie, Martin Ralphs & Ken Rennoldson (UK ONS)  
-* Matyas Meszaros (Eurostat)  
-* Jonathan Challener (OECD)  
-* Iraj Namdarian (Council for Agricultural Research and Economics)  
-* InKyung Choi & Andrew Tait (UNECE).
+-   Craig Lindenmayer (Australian Bureau of Statistics)\
+-   Kate Burnett-Isaacs (Infrastructure Canada), who lead the Governance & Maintenance sub-team\
+-   Mireille Paquette, Li Wang, Christie Glover, & Jonathan Wylie (Statistics Canada)\
+-   Marcello D'Orazio, Lorenzo Asti, Francesco Isidori, Pierpaolo Massoli & Samanta Pietropaoli (Italian National Institute of Statistics)\
+-   Akmaral Tokbergenova & Kairat Kipatov (Statistics Kazakhstan)\
+-   Olav ten Bosch & Mark van der Loo (Statistics Netherlands)\
+-   Pubudu Senanayake & Kevin Townend (Statistics New Zealand)\
+-   Nevena Mitrovic, Aleksandra Skoko Despenic, Mira Nikic & Nikola Orlic (Statistical Office of the Republic of Serbia)
+-   Karl McKenzie, Martin Ralphs & Ken Rennoldson (UK ONS)\
+-   Matyas Meszaros (Eurostat)\
+-   Jonathan Challener (OECD)\
+-   Iraj Namdarian (Council for Agricultural Research and Economics)\
+-   InKyung Choi & Andrew Tait (UNECE).
 
 ## Target Audience
 
-This site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods and tools openly while producing official statistics.
-.
+This site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods and tools openly while producing official statistics. .
 
 ::: callout-note
 Web site under construction
