@@ -3,6 +3,7 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 sup   {color: #48c9b0;}  /* Note to self: Remove later, as footnote numbers should be blue to make it obvious that they're hyperlinks  */
 
+
 .centered {
   text-align: center;
 }
