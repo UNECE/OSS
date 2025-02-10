@@ -1,10 +1,6 @@
 ---
 title: "Case Studies"
 sidebar: false
-
-include-in-header:
-  text: |
-    <script src="assets/js/misc.js"></script>
 ---
 
 ## **Data Cleaning** {#Data-Cleaning}

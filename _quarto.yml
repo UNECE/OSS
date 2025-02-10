@@ -30,7 +30,7 @@ website:
 
   page-footer:
     right: "Built with [Quarto](https://quarto.org/)"
-    left: This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) 
+    left: This work is licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/) 
     center: |
       [![ModernStats Logo](/assets/img/modernstats_footer.png){fig-alt="ModernStats" width=110px}](https://unece.org/statistics/modernstats)
   favicon: /assets/img/oss_charter_logo.png

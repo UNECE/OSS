@@ -17,11 +17,13 @@ include-in-header:
       text-align: center;
     }
     </style>
+    <script src="assets/js/misc.js"></script>
 ---
 
 ::: {intro}
 
-Open-source software is an essential for producing official statistics in an open, sharable, and transparent matter. The following principles intended to guide both the production and adoption of open-source software for statistical production. 
+Open-source software is essential for producing official statistics in an open, sharable, and transparent matter.\
+The following principles intended to guide both the production and adoption of open-source software for statistical production. 
 
 :::
 
