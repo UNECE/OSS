@@ -83,7 +83,7 @@ In the following section, we highlight the key strengths, weaknesses, opportunit
 | 6\. Choose permissive                         | 10: International Cooperation                                                                                                                | 3: Managing statistical standards                                                                                                                                                        | 5.1 Think open, 5.2 Transform, 5.3 Share, 5.4 Contribute                                                            |
 | 7\. Promote                                   | 10: International cooperation                                                                                                                | 3: Managing statistical standards (3.1), 8: Assuring commitment to quality (8.2)                                                                                                         | 5.1 Think open, 5.3 Share                                                                                           |
 
-: Table: OS Frameworks {.striped .hover}
+: Table: OSS Frameworks {.striped .hover}
 
 ## **2. SWOT analysis on OS adoption in NSOs** {#2:-swot-analysis-on-os-adoption-in-nsos}
 
