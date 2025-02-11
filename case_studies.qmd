@@ -3,9 +3,7 @@ title: "Case Studies"
 sidebar: false
 ---
 
-## **Data Cleaning** {#Data-Cleaning}
-
-**Building a FOSS ecosystem for statistical data processing**
+## **Building a FOSS ecosystem for statistical data processing** {#Data-Cleaning}
 
 *Statistics Netherlands*
 
@@ -49,9 +47,7 @@ In the first place there is a large FOSS community in R that provides help, a pa
 
 Secondly, publishing the packages in open source immediately gives a large audience the opportunity to try the product: *given enough eyeballs, all bugs are shallow* \ [^15]. Enthusiastic users are able to contribute new use cases, issues, and documentation, which overall has contributed to creating more general and more robust software.
 
-## **Istat** {#Istat}
-
-**Adoption of OSS and governance efforts in Istat**
+## **Adoption of OSS and governance efforts in Istat** {#Istat}
 
 *Italian National Institute of Statistics (Istat)*
 
@@ -87,9 +83,7 @@ In the development of the code, much attention is paid to dependency issues in o
 
 Governance will also provide recommendations for user support, maintenance and updating of the approved tools over time. All defined procedures should be complemented by the identification and establishment of a set of governance bodies with clearly defined roles and responsibilities.
 
-## **SIS-CC** {#SIS-CC}
-
-**Building a community-driven OSS: The SIS-CC experience**
+## **Building a community-driven OSS: The SIS-CC experience** {#SIS-CC}
 
 *Organisation for Economic Co-operation and Development (OECD)*
 
@@ -125,9 +119,7 @@ The SIS-CC operates within a multi-tier community ecosystem, underpinning a sust
 
 The governance philosophy of the SIS-CC champions an inclusive strategy, laying its foundations on the Community Foundations: Community Driven Dynamics; Open source Delivery; Full Data Lifecycle; Componentised Architecture; and Systematic User Research. These foundations are critical in a shared journey towards achieving mutual objectives, enhancing collaboration, and solidifying our collective value proposition.
 
-## **SORS** {#SORS}
-
-**Transforming a software into OSS at SORS**
+## **Transforming a software into OSS at SORS** {#SORS}
 
 *Statistical Office of the Republic of Serbia (SORS)*
 
@@ -188,9 +180,7 @@ The transition of IST to an open source product represents a significant move by
 
 By developing a flexible CLA, SORS aims to create a structured and collaborative environment where contributions from the broader statistical community, including universities, researchers, and developers, can enhance IST while ensuring its continued alignment with SORS’s goals. As the transition progresses, SORS remains committed to maintaining IST’s reputation as a modern, scalable, and secure solution for statistical data management, ensuring that it continues to meet the needs of NSOs worldwide.
 
-## **Awesome List for Official Statistics** {#Awesome-List}
-
-**Sharing OSS across communities - The Awesome List for Official Statistics Software**
+## **Sharing OSS across communities - The Awesome List for Official Statistics Software** {#Awesome-List}
 
 *Statistics Netherlands*
 
