@@ -24,9 +24,7 @@ format:
 ---
 
 ::: callout-important
-The text herein is currently under draft and should by no means be considered finalised.
-
-Any references to endorsement by the UNECE HLG-MOS or any other body are proposed and not valid as of the time of writing.
+This Charter is under consideration for [CES](https://unece.org/statistics/ces/) endorsement.
 :::
 
 ## Opening Statement
