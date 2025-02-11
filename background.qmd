@@ -3,15 +3,21 @@ title: "Background"
 sidebar: false
 ---
 
-::: {#intro}
-Open-source software is essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics.
+# **Introduction** {#introduction}
 
-Consequently, the Charter and its principles herein on open-source software in official statistics in both the production of software, and the adoption of software for statistical production, have been drafted under the *HLG-MOS Open-Source Software Project 2024* for consideration of endorsement by the UNECE HLG-MOS.
+Open-source software (OSS) is essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics. 
 
-**Be aware that content found here is currently under draft and should not be considered final copy at the current time of writing.**
-:::
+This page provides an introduction to OSS, the project team, target audience, and how OSS fits into the greater IT context.
 
-## Who we are
+## **What is open source?** {#what-is-open-source}
+
+There are different approaches that may be taken when developing software, which include developing in the open (i.e., documenting development in a publicly accessible place such as a GitHub repository), making code shareable, and allowing and encouraging collaboration between interested parties. However, what essentially makes software “open source” is whether the source code is freely available for sharing, and whether the code may be modified by users and derivative works created, although some restrictions may apply given the licence that the authors choose for the software.
+
+In order for software to be open source, the authors must specify such by choosing an appropriate licence for the software that allows for free distribution and/or modification. Restrictions can apply with the licence as long as they do not arbitrarily limit the use and modification of the software (e.g., by limiting its use to only certain groups or fields of endeavour).
+
+Further information on open source can be found on the [Open Source Initiative website](https://opensource.org/).
+
+## **Project Origins: Who we are** {#who-we-are}
 
 This site is an important deliverable of the Statistical Open Source Software project that was conducted over the 2024 period, and mandated by the UNECE High-Level Group for the Modernisation of Official Statistics ([HLG-MOS](https://unece.org/statistics/networks-of-experts/high-level-group-modernisation-statistical-production-and-services)) following its annual meeting in November 2023.
 
@@ -31,10 +37,224 @@ The project, led by Carlo Vaccari (UNECE Project Manager), was composed of aroun
 -   Iraj Namdarian (Council for Agricultural Research and Economics)\
 -   InKyung Choi & Andrew Tait (UNECE).
 
-## Target Audience
+## **Target Audience** {#audience}
 
-This site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods and tools openly while producing official statistics. .
+This site has been created to help guide NSOs and their staff who are interested in using, developing, and sharing statistical methods and tools openly while producing official statistics.
 
-::: callout-note
-Web site under construction
-:::
+## **Mapping between the OSS charter and other frameworks** {#mapping-between-the-oss-charter-and-other-frameworks}
+
+| Principle | [Fundamental Principles of Official Statistics](https://unstats.un.org/unsd/dnss/gp/FP-New-E.pdf) | [UN NQAF Quality Principles 2019](https://unstats.un.org/unsd/methodology/dataquality/un-nqaf-manual/) | [EU-Open source strategy, 2020](https://ec.europa.eu/info/departments/informatics/open-source-software-strategy_en) |
+| :---- | :---- | :---- | :---- |
+| 1\. OSS by default | 2: Professional Standards, Scientific Principles, and Professional Ethics; 3: Accountability and transparency; 10: International Cooperation  | 5: Assuring impartiality and objectivity, 6: Assuring transparency, 8: Assuring commitment to quality, 10: Assuring methodological soundness, 18:  Assuring coherence and comparability | 5.1 Think open, 5.2 Transform, 5.3 Share, 5.4 Contribute |
+| 2\. Work in the open | 3: Accountability and transparency; 8: National coordination | 6: Assuring transparency, 11: Assuring cost-effectiveness (quality principle requirement 11.4) | 5.2 Transform, 5.5 Secure, 5.6 Stay in control |
+| 3\. Improve and give back | 2: Professional Standards, Scientific Principles, and Professional Ethics; 8: National coordination; 10: International cooperation | 3: Managing statistical standards, 8: Assuring commitment to Quality, 10: Assuring methodological soundness, 11: Assuring cost-effectiveness (11.6) | 5.1 Think open, 5.2 Transform, 5.3 Share, 5.4 Contribute |
+| 4\. Think generic statistical building blocks | 2: Professional standards and ethics; 9: Use of international standards; 10: International cooperation  | 3: Managing statistical standards, 10: Assuring methodological soundness, 11: Assuring cost-effectiveness (11.6) | 5.2 Transform, 5.5 Secure, 5.6 Stay in control |
+| 5\. Test, package and document | 3: Accountability and transparency; 10: International cooperation  | 6: Assuring transparency, 8: Assuring commitment to quality, 10: Assuring methodological soundness (10.5), 12: Assuring appropriate statistical procedures (12.1), 19: Managing metadata | 5.3 Share, 5.5 Secure, 5.6 Stay in control |
+| 6\. Choose permissive | 10: International Cooperation |  3: Managing statistical standards  | 5.1 Think open, 5.2 Transform, 5.3 Share, 5.4 Contribute |
+| 7\. Promote | 10: International cooperation  | 3: Managing statistical standards (3.1), 8: Assuring commitment to quality (8.2) | 5.1 Think open, 5.3 Share |
+
+: Table: OS Frameworks {.striped .hover}
+
+## **SWOT analysis on OS adoption in NSOs** {#swot-analysis-on-os-adoption-in-nsos}
+
+This SWOT analysis is based on a preliminary SWOT exercise conducted by the project team as part of its sprint in September 2024 and subsequent in-depth evaluation of the identified strengths, weaknesses, opportunities, and threats of open source software (OSS). Within each category, we have extracted key themes, and outlined the various aspects of the use of open source software in a statistical organisation through those themes. 
+
+Note that while open source development is driven by a collaborative community, the focus of this analysis is on individual organisations as the decision of open source adoption is made at the level of the organisation.
+
+### **Strengths and opportunities**  {#strengths-and-opportunities}
+
+In this section, we discuss the strengths of OSS \- positive attributes and resources that provide a competitive advantage in its use \- as well as the opportunities it presents for statistical organisations. 
+
+In analysing the strengths, we recognise that they can both be elements that are currently present, or elements that are yet to be realised, which may require the leveraging of various opportunities to achieve.
+
+Strengths and opportunities fall into the following key themes:
+
+* Freedom to shape organisational future and meet needs.  
+* Democratisation of development and agility.  
+* Transparency.  
+* Improvement of quality, interoperability, and standardisation.  
+* A sense of community and communal development (for a public good).  
+* Cost reduction.  
+* Alignment with job market trends.
+
+There is also overlap and interaction between these themes (e.g., transparency can lead to improvements in quality), which we note below. 
+
+Finally, it is important to note that to realise the strengths and opportunities outlined, the talent capability required within an organisation is different than if off-the-shelf priority solutions are used, or solutions contracted out for development and used in-house. The fostering of in-house open source talent is vital to open source strategy and organisational resilience.
+
+#### Democratisation of development
+
+Because OSS does not require proprietary licenses or large upfront costs, any actor is able to begin a project or development with existing tools, software, and code without limits of access to restricted technology. This means that such development is available to any organisation (or indeed individual), large or small, even if their financial resources are limited. 
+
+Thus, OSS development is a more democratic venture by these virtues. In addition, this lends itself to agility of development, and scalability. Essentially, a project can start with one person, and remain small, or grow into a large community, depending on the utility and ease-of-use of the developed software. Conversely, with proprietary tools, this is essentially impossible due to restricted access (particularly to source code).
+
+In addition, **the clearly established licensing models** can protect users and developers alike, thus reducing the liability risks to development, further reducing barriers, and allowing a broader community to contribute to software development without fear of legal issues.
+
+We note however, OSS in and of itself does not remove all resourcing barriers to development, for example, time, capacity, and capability driven barriers will remain regardless of the openness of the software in question. 
+
+#### Freedom to shape organisational future and meet needs
+
+With OSS, there are no restrictions driven by vendor policies, nor limitations imposed based on external decisions by the maintainers of the proprietary tools. For example, if a feature set is removed from a proprietary tool, one has no recourse, apart from negotiations with the vendor. Such limitations do not exist with OSS, as one is free to create a fork of a version with the desired properties. 
+
+Critically, OSS also avoids **capture by vendors** (who often do not have public good as their core mission) and **vendor lock-in**. This increases the flexibility and decision space available to an organisation to shape its own future. This also reduces the risk of unsupported software becoming a large technical debt (as vendors withdraw support, or feature sets), as with OSS a new maintainer can simply take over, or form a new clone or fork if desired. 
+
+In addition, because large commercial developers of proprietary software do not have a general interest in investment and development of solutions for niche markets (such as official statistics) NSOs using these types of software are forced to adopt their practices and compromise best practice to fit what is available, rather than having a tool that is fully fit-for-purpose, thus limiting the flexibility to operate in the most optimal manner to achieve the missions of the organisation. An internal capability in the use of OSS, and investment therein provides a mitigation against such.
+
+#### Transparency
+
+Trust in official statistics is a critical requirement for the successful use and uptake of the outputs and insights produced by NSOs as well as other organisations dealing with official statistics. Without trust, decisions based on these statistics, and the statistics themselves can be called into question, decreasing their value and utility. 
+
+Transparency in the sourcing, transforming, and analysing of data, through to the production of outputs (i.e., for all activities within the GSBPM) is a critical element of building trust.
+
+While OSS alone is not sufficient to build such transparency, it forms a necessary foundation, because all elements of the process (in theory) are fully examinable for steps that are undertaken in any transformation, analysis, modelling, or dissemination conducted with OSS. 
+
+If an organisation uses OSS in their processes, and also adheres to the principles of OSS by openly publishing their codebase, anyone in the public can interrogate the code, suggest improvements, and report on any issues. This demonstrates that the processes are not hidden, and can be vetted. Further, this allows for alignment with open publishing, open access, and open science standards.
+
+#### Improvement of quality, interoperability, and standardisation
+
+The transparency achieved by the examinability of published code (see above) can lead to better quality solutions, both because a developer is more likely to take extra care in their work if it is public, and, the community can suggest improvements and raise issues as they are discovered. 
+
+Interoperability and standardisation, while important in and of themselves, can also be thought of as contributing to quality, since these can reduce duplication of solutions, increase efficiency in adoption and development for organisations, propagate best practices, avoid compatibility issues, and reduce the risk of errors or failures.
+
+Developing to open standards organically drives standardisation across the solution space and tool kits. As a consequence of that adherence to open standards leads to better integrability of various solutions and other systems adhering to the same standards. This means that implementations of common methodologies, techniques, and solutions can be replicable, and easily adopted to a given organisations needs, effortlessly achieving a baseline of quality. This kind of flexibility in terms of standardisation and quality improvement is not possible with proprietary software, as it can only be driven by the vendor.
+
+Improved interoperability and standardisation can also enhance collaboration with external stakeholders, such as other government agencies and academic institutions, by enabling them to adopt the same open source software for similar purposes within their organisations. This shared usage fosters cooperation across diverse entities and facilitates joint projects.
+
+#### A sense of community and communal development (for a public good)
+
+A less tangible, yet important, strength of OSS development is that both users and developers can have a sense of community. Where dealings with vendors of proprietary software are often purely transactional, because OSS is a more collaborative effort, usually driven by people’s needs, passions, and even voluntary efforts, this can develop a sense of belonging to something bigger, the open source community (for a particular interest).
+
+Such communal development and collaboration, coupled with the transparency aspects above can also improve quality and innovation, since contributors outside of the project may bring new ideas and perspectives to the work.
+
+The sense of making a greater contribution, and the acknowledgement received from your peers in the community can drive developer satisfaction, which has other benefits in terms of morale, wider contributions to the organisation, and talent retention. 
+
+#### Cost reduction
+
+A major strength of OSS is the large realisable cost reductions in both development and operations. There are several direct drivers of this:
+
+* No need for expensive per-user licenses, or other software usage fees,  
+* No risk of escalating licensing costs (often for no changes in the underlying software),  
+* No need to buy add-on proprietary features (either as they are released, or locked behind paywalls),  
+* No need to buy into an expensive wider ecosystem of vendor-locked software to be able to use specific tools.
+
+In addition to this there are indirect drivers of cost savings, specifically:
+
+* A multiplied return on investment (ROI) due to co-investment (where many organisations can work together on development, realising the benefits, without having to duplicate investment or fees),  
+* Usage of existing codebases and adapting to flexible requirements (see section on Freedom), leading to more optimal resource allocation and operations,  
+* Once developed, the software can be used by many, so for downstream users this is a major reduction in cost, and for upstream developers, the contributions back upstream can improve their product at no extra cost.
+
+#### Alignment with job market trends
+
+Finally, it should be noted that there is a growing shift toward open source culture and the adoption of open source programming languages across various fields such as research and the private sector. Many universities now offer curricula focused on open source languages such as R and Python. Statistical organisations that actively use open source software not only are better positioned to attract these candidates, presenting themselves as forward-thinking and aligned with current industry standards but also can avoid the need to train recruits in outdated skills. Additionally, as the job market for statisticians, data scientists, and software engineers increasingly comprises individuals with open source expertise, the talent pool for statistical organisations will continue to expand, providing more opportunities for recruitment.
+
+
+---
+
+
+As noted earlier, the various strengths of OSS overlap and are intertwined. It is these overlapping strengths that lead to a significant amount of the cost reductions. Because of that, in assessing the costs, particularly when the choice is between proprietary solutions and open source solutions, a wider perspective on costs, services, and implications must be taken. However, even a direct comparison is likely to yield lower costs with the use of OSS due to the direct drivers above.
+
+### **Weakness and threats** {#weakness-and-threats}
+
+This section discusses inherent **weakness** of open source software or limitation, lack of capability within a statistical organisation that makes it difficult to adopt open source software. It also includes **threats,** external factors and influences that could impose risks to the organisations when using open source. 
+
+#### Maintenance and sustainability
+
+One of the major weaknesses associated with OSS is around long-term maintenance and sustainability. Software used in statistical organisations, especially those in production, require a certain level of sustainability as they can have a significant impact on comparability of the statistics produced, which is a crucial quality of official statistics.
+
+When OSS depends heavily on individual contributors or single organisations, it can lead to a “single point of failure” (unless community support is created). If these key individuals become unavailable (e.g., retirement, transfer) or the organisation who maintained the OSS shifts their priorities and discontinues the support, it becomes difficult to sustain the development and maintenance of the software. Open source licences by nature do not guarantee assistance (which are typically established via formal service level agreements or terms and conditions for proprietary software from private companies) and this adds uncertainty, which in turn creates fear in the users and organisations who try to adopt OSS. 
+
+#### Governance 
+
+Complexities around governance present a significant challenge in the adoption of open source software. The lack of a clear governance framework creates a "governance maze," where roles, responsibilities, and processes such as deciding who does what, when, and where are poorly defined. As the number of project clones and spinoffs grows, determining which version to adopt, support and keep becomes complicated (“clones hell”).
+
+Governance becomes even more complex at the international level as it is difficult to establish structure and enforce policies. For larger-scale projects, relying solely on voluntary contributions may be insufficient. These projects would require systematic and sustained support from organisations to ensure proper governance. 
+
+#### Lack of legal expertise
+
+As demonstrated in [Chapter 3: Case studies LINK TO BE FIXED](#3.-case-studies), open source software adoption requires legal considerations, particularly regarding licensing when developing and releasing the software or repurposing existing software. Legal expertise in statistical organisations has been typically focused on areas such as statistical law and data access, and expertise in open source license and managing issues arising from license is limited. 
+
+#### Learning curve and lack of culture
+
+From a user-perspective, open source software may present a steeper learning curve compared to proprietary software that provides user-friendly interfaces and customer service as part of the package. Also, open source tools are often based on open source programming languages such as R and Python, which represent new skill sets for many staff members. While many new recruits are already familiar with these languages, much of the workforce in statistical organisations were trained and worked with traditional programming languages. 
+
+This also incurs massive cultural change. For example, developers often have a habit of working independently, with limited experience on code-sharing. This lack of a cooperative culture can create barriers to open source software adoption.
+
+#### Integration 
+
+The incorporation of OSS into existing systems and workflows can be a serious challenge. Some proprietary software allows for the incorporation of scripts written in languages like R and Python, while others are more restrictive, and it is possible that multiple separate workflows must be run in order to produce desired results.
+
+Similarly, tools that are developed with OSS that rely on proprietary software for part of the production process, can run into issues where the proprietary software is updated, and the pipeline built with OSS is resultantly broken. One example is the R package *Pagedown* which is used to create reports written in R and structured in page format using JS and CSS, which relies on Chrome for the rendering of documents into PDF formatting. Updates of Chrome have in the past resulted in the rendering process of the package to break, Thus, the desired flexibility and power of OSS is thus hamstrung by the reliance of proprietary software. 
+
+Further discussion on integration and related interoperability issues can be found in SIS-CC’s excellent and detailed article, “Enhancing SDMX tools interoperability for improved organisational efficiency” [^38].
+
+#### Hidden and double cost
+
+As highlighted by all factors mentioned above, open source software is far from “free”. Organisations must invest significantly in capacity building, maintenance and governance. Additionally, during the transition period, they may need to maintain traditional software in parallel which results in double costs for license, support and infrastructure.
+
+There is also a cost surrounding uncertainty. From a user perspective, the lack of guaranteed customer service can create operational risks, while reliance on community-driven support from an open source developer perspective may introduce unpredictability. These can pose a significant financial and operational burden for organisations adopting open source software.
+
+#### Potential IP issues and security breaches from outside
+
+The fundamental premise of OSS that source code is open and anyone can freely use it can present potential threats related to legal, intellectual property (IP) issues, and security breaches. One major concern is the possibility of outside entities taking over the software, modifying it, and exploiting it for commercial gains. Improvement is always welcome, but not all actors may follow the terms in license. This could result in IP complications, which can be particularly daunting for statistical organisations, where there is lack of legal expertise in OSS licensing and IP issues.
+
+Also, the open nature of OSS exposes it to risks of malicious actors exploiting it for attacks, compromising the software's integrity as well as corrupted outputs, loss of sensitive data, or diminished trust in the system. With the use of open data expanding, open source codes may lead to further increase of privacy risk, e.g., through membership inference attack on ML models. This threat is particularly critical for statistical organisations, where reliability and confidentiality are paramount. 
+
+## **Open source and AI** {#open-source-and-ai}
+
+The intersection of open source and AI promotes a dynamic ecosystem where transparency, collaboration and innovation drive the development of accessible, trustworthy and cutting-edge AI technologies.
+
+As data, models and algorithms fuel AI development, making sure that they are open is critical for NSOs not least to secure reproducibility, replicability and traceability of outputs. These are preconditions of any credible, accurate and trustworthy official statistics.
+
+### **The OSI document** {#the-osi-document}
+
+In the fall 2024, the Open Source Initiative (OSI) released the final version of “[The Open Source AI definition](https://opensource.org/ai/open-source-ai-definition)” which outlines the principles and requirements for defining Open Source Artificial Intelligence (AI). 
+
+OSI defines as “Open Source AI” a system that must allow users to:
+
+* **Use** the system for any purpose and without having to ask for permission.  
+* **Study** how the system works and inspect its components.  
+* **Modify** the system for any purpose, including to change its output.  
+* **Share** the system for others to use with or without modifications, for any purpose.
+
+To modify a machine-learning system, the following elements must be available:
+
+* **Data Information**: Detailed information about the data used to train the system, including its provenance, scope, characteristics, and processing methods.  
+* **Code**: Complete source code used to train and run the system, including data processing, training, validation, testing, and inference code.  
+* **Parameters**: Model parameters such as weights or configuration settings, including checkpoints and optimiser states.
+
+Concerning the licensing requirements, applied licenses should adhere to OSI standards, ensuring the system and its components remain accessible and modifiable. In some cases (viral licenses) conditions may require modified versions to be released under the same terms as the original, preserving openness.
+
+As machine learning systems are composed of AI **models (**including the architecture, parameters, and inference code) and AI **weights (**the learned parameters that produce outputs from inputs), both models and weights must provide data information and code for reproducibility. More fundamentally, disclosing the underlying data, algorithms and models used by AI systems is critical to ensure the traceability of inputs to outputs and outputs to inputs.
+
+
+### **Open source AI for NSOs** {#open-source-ai-for-nsos}
+
+National statistical offices (NSOs) can significantly benefit from adopting Open Source AI, not least because of its alignment with the principles of transparency, efficiency, and public trust, which are central to the mission of NSOs. There are a number of key reasons why Open Source AI can be fruitful for NSOs:
+
+*  **Transparency and accountability**:  
+  * Auditable systems: Open Source AI systems can be inspected and audited, ensuring that the methods used for data analysis and reporting are transparent and accountable.  
+  * Reproducibility: Open source AI allows external parties to reproduce results, validating the integrity and reliability of the statistical outputs produced by NSOs.  
+* **Customisation and flexibility**:  
+  * Tailored solutions: NSOs can customise Open Source AI tools to meet their specific needs and requirements, such as national data processing requirements, regional language models, or specific statistical methodologies. At the same time, open models can easily be "portable", integrating easily in similar environments.  
+  * Adaptability: Open Source AI allows NSOs to adapt and improve their AI systems as statistical methods and data sources evolve, ensuring long-term relevance and effectiveness.  
+* **Collaboration, sharing and accessibility**:  
+  * Community support: NSOs can benefit from the support of a global community of developers and experts (NSOs, international organisations, academic institutions, …), including to freely share code, models and training data. Community can provide assistance, updates and improvements, while also reducing duplication of efforts.  
+  * Sharing and capacity building: collaboration with other statistical organisations and the Open Source community can lead to the sharing of best practices and innovative solutions, increasing compatibility and standardisation. It can also foster the sharing of training and knowledge.  
+  * Wider accessibility: Open Source AI tools enable smaller NSOs or those with limited budgets to access advanced statistical and machine-learning capabilities  
+* **Innovation**:  
+  * Access to cutting-edge technology: Open Source AI provides NSOs with free access to state-of-the-art tools and models, enabling them to adopt the latest advancements in data analysis, forecasting, and machine learning.  
+  * Scalability: NSOs can scale their AI solutions easily by leveraging the collective efforts of the community, ensuring that their technologies can grow and adapt as their data collection and analysis needs expand.  
+* **Ethical considerations**:  
+  * Ethical AI: by disclosing training data, algorithms and models, Open Source AI allows NSOs to ensure that their AI systems are developed and used ethically, addressing concerns about bias, privacy, and FAIRness.  
+  * Compliance: The transparency of Open Source AI systems enables NSOs to comply with ethical standards and regulatory requirements, ensuring that their statistical work is conducted responsibly.  
+* **Strengthening security**:  
+  * Control over data: Open Source AI systems allow NSOs to retain full control over their data, minimizing risks associated with external vendors or proprietary black-box solutions.  
+  * Community-verified security: The transparency of Open Source tools means that vulnerabilities can be quickly identified and patched by the community, enhancing overall security.  
+  * Quality assurance: Open Source AI tools can be analysed and validated by the community, ensuring that they meet high standards of data integrity and security.
+
+Open Source AI offers NSOs a path to greater transparency, collaboration, and innovation while fostering trust and accountability. By embracing these tools, NSOs can modernise their operations, improve statistical outputs, and better serve the public and policymakers. This approach aligns with global trends in open data and open government initiatives, ensuring that NSOs remain leaders in statistical innovation and integrity.
+
+OSI released in December 2024 a [document](https://opensource.org/ai/open-source-ai-definition) with the aim of applying the principles of the [Open Source Definition](https://opensource.org/osd) in the domain of AI, trying to merge in Open Source AI different “openness” principles interacting with each other: Open Data with Open Source with Open Science and Open Knowledge.
+
+
+
+[^38]:  [https://siscc.org/enhancing-sdmx-tools-interoperability-for-improved-organisational-efficiency/](https://siscc.org/enhancing-sdmx-tools-interoperability-for-improved-organisational-efficiency/)
