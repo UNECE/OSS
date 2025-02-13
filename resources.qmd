@@ -32,8 +32,8 @@ The following members of the working group that prepared the contents of this si
 |        Name         |     Organisation        | Contact Info                   |  
 |---------------------|-------------------------|--------------------------------|
 | Carlo Vaccari       | Independent Contractor  | vaccaricarlo at gmail dot com  |  
-| Olav ten Bosch      | CBS                     | o.tenbosch at  cbs dot nl      |
-| Jonathan Challenger | OECD                    | contact at siscc dot org       | 
+| Olav ten Bosch      | Statistics Netherlands  | o.tenbosch at  cbs dot nl      |
+| Jonathan Challener  | OECD                    | contact at siscc dot org       | 
 | Marcello D'Orazio   | Istat                   | madorazi at istat dot it       | 
 
 : Member Details {.striped .hover}
