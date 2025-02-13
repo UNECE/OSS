@@ -25,6 +25,21 @@ sidebar: false
 
 ...
 
+# Contacts
+
+The following members of the working group that prepared the contents of this site are available to contact for clarification requests and support in introducing open-source software into NSOs.
+
+|        Name         |     Organisation        | Contact Info                   |  
+|---------------------|-------------------------|--------------------------------|
+| Carlo Vaccari       | Independent Contractor  | vaccaricarlo at gmail dot com  |  
+| Olav ten Bosch      | CBS                     | o.tenbosch at  cbs dot nl      |
+| Jonathan Challenger | OECD                    | contact at siscc dot org       | 
+| Marcello D'Orazio   | Istat                   | madorazi at istat dot it       | 
+
+: Member Details {.striped .hover}
+
+
+
 ::: callout-note
 Web site under construction
 :::
