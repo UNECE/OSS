@@ -41,11 +41,5 @@ The following members of the working group that prepared the contents of this si
 | Nikola Orlic              | SORS                    | nikola.orlic at stat.gov.rs       | 
 
 
-
 : Member Details {.striped .hover}
 
-
-
-::: callout-note
-Web site under construction
-:::
