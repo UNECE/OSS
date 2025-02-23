@@ -29,12 +29,18 @@ sidebar: false
 
 The following members of the working group that prepared the contents of this site are available to contact for clarification requests and support in introducing open-source software into NSOs.
 
-|        Name         |     Organisation        | Contact Info                   |  
-|---------------------|-------------------------|--------------------------------|
-| Carlo Vaccari       | Independent Contractor  | vaccaricarlo at gmail dot com  |  
-| Olav ten Bosch      | Statistics Netherlands  | o.tenbosch at  cbs dot nl      |
-| Jonathan Challener  | OECD                    | contact at siscc dot org       | 
-| Marcello D'Orazio   | Istat                   | madorazi at istat dot it       | 
+|        Name               |     Organisation        | Contact Info                      |  
+|---------------------------|-------------------------|-----------------------------------|
+| Carlo Vaccari             | Independent Contractor  | vaccaricarlo at gmail.com         |  
+| Olav ten Bosch            | Statistics Netherlands  | o.tenbosch at  cbs.nl             |
+| Jonathan Challener        | OECD                    | contact at siscc.org              | 
+| Marcello D'Orazio         | Istat                   | madorazi at istat.it              | 
+| Mira Nikic                | SORS                    | mira.nikic at stat.gov.rs         |
+| Nevena Mitrovic           | SORS                    | nevena.mitrovic at stat.gov.rs    |
+| Aleksandra Skoko Despenic | SORS                    | aleksandra.skoko at stat.gov.rs   |
+| Nikola Orlic              | SORS                    | nikola.orlic at stat.gov.rs       | 
+
+
 
 : Member Details {.striped .hover}
 
