@@ -20,6 +20,10 @@ website:
       - background.qmd
       - resources.qmd
     tools:
+      - icon: file-pdf
+        menu: 
+          - text: Project Report
+            href: https://unece.org/sites/default/files/2025-02/Statistical%20Open%20Source%20Software%20-%20Charter%20and%20Report.pdf     
       - icon: linkedin
         href: https://www.linkedin.com/showcase/unece-modernisation-of-official-statistics/
       - icon: github
