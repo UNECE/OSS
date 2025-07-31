@@ -22,24 +22,28 @@ include-in-header:
 
 ::: {intro}
 
-Open-source software is essential for producing official statistics in an open, sharable, and transparent matter.\
-The following principles intended to guide both the production and adoption of open-source software for statistical production. 
+Open source software is essential for producing official statistics in an open, sharable, and transparent matter.\
+The following principles are intended to guide both the production and adoption of open source software for statistical production. 
 
 :::
 
 ::: {layout=[10,-1,10,-1,10,-1,10],[1]}
-[![<a href="/charter.html#oss-by-default">Open by default</a>](assets/img/principles/openbydefault_sm.png)](/charter.html#oss-by-default)
+[![<a href="/charter.html#oss-by-default">Open by default</a>](assets/img/principles/openbydefault_sm.png)](/principles.html#oss-by-default)
 
-[![<a href="/charter.html#work-in-the-open">Work in the open</a>](assets/img/principles/workintheopen_sm.png)](/charter.html#work-in-the-open)
+[![<a href="/charter.html#work-in-the-open">Work in the open</a>](assets/img/principles/workintheopen_sm.png)](/principles.html#work-in-the-open)
 
-[![<a href="/charter.html#improve-and-give-back">Improve and give back</a>](assets/img/principles/improveandgiveback_sm.png)](/charter.html#improve-and-give-back)
+[![<a href="/charter.html#improve-and-give-back">Improve and give back</a>](assets/img/principles/improveandgiveback_sm.png)](/principles.html#improve-and-give-back)
 
-[![<a href="/charter.html#think-generic-statistical-building-blocks">Think generic building blocks</a>](assets/img/principles/thinkgenericbuildingblocks_sm.png)](/charter.html#think-generic-statistical-building-blocks)
+[![<a href="/charter.html#think-generic-statistical-building-blocks">Think generic building blocks</a>](assets/img/principles/thinkgenericbuildingblocks_sm.png)](/principles.html#think-generic-statistical-building-blocks)
 
-[![<a href="/charter.html#test-package-and-document">Test, package and document</a>](assets/img/principles/testpackageanddocument_sm.png)](/charter.html#test-package-and-document)
+[![<a href="/charter.html#test-package-and-document">Test, package and document</a>](assets/img/principles/testpackageanddocument_sm.png)](/principles.html#test-package-and-document)
 
-[![<a href="/charter.html#choose-permissive">Choose permissive</a>](assets/img/principles/choosepermissive_sm.png)](/charter.html#choose-permissive)
+[![<a href="/charter.html#choose-permissive">Choose permissive</a>](assets/img/principles/choosepermissive_sm.png)](/principles.html#choose-permissive)
 
-[![<a href="/charter.html#promote">Promote</a>](assets/img/principles/promote_sm.png)](/charter.html#promote)
+[![<a href="/charter.html#promote">Promote</a>](assets/img/principles/promote_sm.png)](/principles.html#promote)
 
+:::
+
+::: callout-note
+The Guiding Principles (previously referred to as "The Charter") were [endorsed](https://unece.org/sites/default/files/2025-06/OpenSourcePrinciples%20Amended.pdf) by the [Conference of European Statisticians (CES)](https://unece.org/statistics/ces/) at the Seventy-third plenary session in Geneva, Switzerland, 16–18 June 2025.
 :::

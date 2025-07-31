@@ -7,7 +7,7 @@ sidebar: false
 
 Open-source software (OSS) is essential for modern statistical production, fostering transparency in methodology and promoting international collaboration in developing and supporting the production of official statistics.
 
-This page provides an introduction to OSS, the project team, target audience, and how OSS fits into the greater IT context.
+This page provides an introduction to OSS, the project team, target audience, how OSS fits into the greater IT context, and the endorsement of the Statistical Open Source Software Principles by the Conference of European Statisticians (CES) in June 2025.
 
 ## **What is open source?** {#what-is-open-source}
 
@@ -69,9 +69,19 @@ In the following section, we highlight the key strengths, weaknesses, opportunit
 -   **IP issues:** The open nature of OSS can expose organisations to IP exploitation.\
 -   **Security breaches:** The transparency of OSS may make the software vulnerable to malicious attacks, compromising data integrity and security.
 
+# **CES Endorsement** {#ces-endorsement}
+
+The Conference endorses the Statistical Open Source Software Guiding Principles at the Seventy-third plenary session in Geneva, 16–18 June 2025.
+The Principles were [amended](https://unece.org/sites/default/files/2025-06/OpenSourcePrinciples%20Amended.pdf) as described in document [ECE/CES/2025/9/Add.1](https://unece.org/sites/default/files/2025-06/ECE_CES_2025_9_Add.1_Open%20Source%20summary.pdf) after an e-consultation process in which CES member countries were invited to give their feedback on what was originally referred to as the "HLG-MOS Open Source Software Charter".
+
+A brief summary of the e-consultation that was presented as the plenary session is [available](https://unece.org/sites/default/files/2025-06/8g_Open%20Source_Consultation%20Summary_UNECE.pdf).
+
+The CES encourages countries to share and promote the Principles within their statistical systems.
+
+
 # **Annexes** {#annexes}
 
-## **1. Mapping between the OSS charter and other frameworks** {#1:-mapping-between-the-oss-charter-and-other-frameworks}
+## **1. Mapping between the OSS Guiding Principles and other frameworks** {#1:-mapping-between-the-oss-guiding-principles-and-other-frameworks}
 
 | Principle                                     | [Fundamental Principles of Official Statistics](https://unstats.un.org/unsd/dnss/gp/FP-New-E.pdf)                                            | [UN NQAF Quality Principles 2019](https://unstats.un.org/unsd/methodology/dataquality/un-nqaf-manual/)                                                                                   | [EU-Open source strategy, 2020](https://ec.europa.eu/info/departments/informatics/open-source-software-strategy_en) |
 |:-----------------|:-----------------|:-----------------|:-----------------|

@@ -5,14 +5,14 @@ project:
 page-navigation: true
   
 website:
-  title: "HLG-MOS Open Source Software"
+  title: "HLG-MOS OS Software Princples"
   site-path: /OSS/
   navbar:
     logo: "assets/img/oss_charter_logo.png"
     left:
       - href: index.qmd
         text: Home
-      - href: charter.qmd
+      - href: principles.qmd
         text: "The Principles"
       - case_studies.qmd
       - href: major_topics.qmd
@@ -24,6 +24,8 @@ website:
         menu: 
           - text: Project Report
             href: https://unece.org/sites/default/files/2025-02/Statistical%20Open%20Source%20Software%20-%20Charter%20and%20Report.pdf     
+          - text: CES Endorsement
+            href: https://unece.org/sites/default/files/2025-06/Decisions%20-%20day%203.pdf
       - icon: linkedin
         href: https://www.linkedin.com/showcase/unece-modernisation-of-official-statistics/
       - icon: github
