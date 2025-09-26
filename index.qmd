@@ -9,7 +9,6 @@ format:
 about:
   id: intro
   template: solana
-  image: assets/img/modernstasts_centered.jpg
 include-in-header:
   text: |
     <style type="text/css">
