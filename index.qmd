@@ -18,6 +18,7 @@ include-in-header:
     }
     </style>
     <script src="assets/js/misc.js"></script>
+    <script src="assets/js/misc.js"></script>
 ---
 
 ::: {intro}
