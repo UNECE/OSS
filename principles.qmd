@@ -1,5 +1,5 @@
 ---
-title: "HLG-MOS Statistical Open Source Software Guiding Principles for Official Statistics"
+title: "The Statistical Open Source Software Guiding Principles for Official Statistics"
 sidebar: false
 format:
   html: 
@@ -13,7 +13,7 @@ format:
       text: |
         \usepackage{fancyhdr}
         \pagestyle{fancy}
-        \fancyhead[C]{HLG-MOS Statistical Open-Source Software Guiding Principles for Official Statistics}
+        \fancyhead[C]{The Statistical Open-Source Software Guiding Principles for Official Statistics}
         \fancyhead[R]{}
         \fancyhead[L]{}
         \fancyfoot[C]{This work is licensed under a %

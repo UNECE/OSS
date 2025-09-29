@@ -9,4 +9,11 @@ sup   {color: #48c9b0;}  /* Note to self: Remove later, as footnote numbers shou
 
 .centered {
   text-align: center;
+  
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it's above other content */
 }

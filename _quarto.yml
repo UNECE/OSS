@@ -5,7 +5,7 @@ project:
 page-navigation: true
   
 website:
-  title: "HLG-MOS OS Software Princples"
+  title: "HLG-MOS Project on SOSS"
   site-path: /OSS/
   navbar:
     logo: "assets/img/oss_charter_logo.png"

@@ -17,9 +17,12 @@ include-in-header:
 ::: {intro}
 
 \
-Open source software is essential for producing official statistics in an open, sharable, and transparent matter.\
+The **Statistical Open Source Software (SOSS) Guiding Principles** (previously referred to as "The Charter") were [endorsed](https://unece.org/sites/default/files/2025-06/OpenSourcePrinciples%20Amended.pdf) by the [Conference of European Statisticians (CES)](https://unece.org/statistics/ces/) at the Seventy-third plenary session in Geneva, Switzerland, 16–18 June 2025.
 
-The following principles are intended to guide both the production and adoption of open source software for statistical production. 
+Open source software is essential for producing official statistics in an open, shareable, and transparent matter.\
+
+The principles are intended to guide both the production and adoption of open source software for official statistics.\
+
 
 :::
 
@@ -38,8 +41,4 @@ The following principles are intended to guide both the production and adoption 
 
 [![<a href="/charter.html#promote">Promote</a>](assets/img/principles/promote_sm.png)](/principles.html#promote)
 
-:::
-
-::: callout-note
-The Guiding Principles (previously referred to as "The Charter") were [endorsed](https://unece.org/sites/default/files/2025-06/OpenSourcePrinciples%20Amended.pdf) by the [Conference of European Statisticians (CES)](https://unece.org/statistics/ces/) at the Seventy-third plenary session in Geneva, Switzerland, 16–18 June 2025.
 :::
