@@ -1,15 +1,8 @@
 ---
 pagetitle: "Index"
-sidebar: 
-  id: "intro"
-  background: "light"
 format:
   html: 
     margin-top: -20px
-about:
-  id: intro
-  template: solana
-  image: assets/img/modernstasts_centered.jpg
 include-in-header:
   text: |
     <style type="text/css">
@@ -23,7 +16,9 @@ include-in-header:
 
 ::: {intro}
 
+\
 Open source software is essential for producing official statistics in an open, sharable, and transparent matter.\
+
 The following principles are intended to guide both the production and adoption of open source software for statistical production. 
 
 :::
