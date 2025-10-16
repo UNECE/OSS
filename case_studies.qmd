@@ -216,6 +216,52 @@ Figure 3 shows the distribution of programming languages of items on the list. T
 The list has proven to be a valuable tool for sharing knowledge about existing open source solutions among different user communities in the ESS, either methodologists, statisticians, IT specialists, or management\ [^25]. Suggestions for changes or additions come from statistical organisations around the world and functionality suggestions for adding compatibility information, maturity indicators, and popularity metrics are documented on the GitHub repository itself. Concluding we can say that this list, maintained by many, has already helped software reuse among statistical organisations and as long as the community actively uses and maintains it, it will continue this important role.
 
 
+
+## **sdmx.io — an open-source SDMX ecosystem** {#sdmx-io}
+
+*Bank for International Settlements (BIS)*
+
+### Introduction
+
+sdmx.io is an open-source ecosystem of software, guidance and learning resources dedicated to implementing the SDMX standard across the statistical lifecycle. Established under the [BIS Open Tech strategy](https://www.bis.org/innovation/bis_open_tech.htm), it reflects the principle that software can be treated as a public good. Rather than a single tool, sdmx.io brings together interoperable components that cover domain modelling, data collection, processing, validation and dissemination. The initiative is meant to improve interoperability and coherence in the SDMX space and with a wide set of community-driven solutions.
+
+### Origins and purpose
+
+The platform emerged from BIS Open Tech’s commitment to promote collaboration and reuse in the statistical and financial community. Open Tech positions software as an enabler of transparency and efficiency, encouraging institutions to contribute openly and benefit collectively. Within this framework, sdmx.io was created to curate and connect tools developed by BIS as well as by international partners — highlighting solutions that are already in use, fostering new collaborations and providing a home for resources that make adoption easier.
+
+### Partnership model
+A defining feature of sdmx.io is its partnership model. The ecosystem is built collaboratively by international SDMX sponsors, national statistical offices (NSOs), central banks, private software companies and, broadly, open-source communities. Many of the tools showcased come from various organisations, ensuring that the platform reflects the breadth of innovation in the SDMX community. This diversity of contributors also guarantees that public-good components and commercially supported offerings can coexist and complement one another.
+
+### Core components
+
+Key elements of the sdmx.io ecosystem include:
+
+-   **Fusion Metadata Registry (FMR)** and its **Workbench** for managing and editing structural metadata. \
+-   The **.Stat Suite**, a community-developed statistical platform maintained by the SIS-CC consortium. \
+-   **Python toolkits** such as pysdmx, gingado and LinkageX, which integrate SDMX into data science workflows. \
+-   The **SDMX Dashboard Generator, SGDS (SDMX Global Discovery Service)** and **SDMX TCK (Test Compatibility Kit)**, supporting dissemination and interoperability. \
+-   Implementations of **VTL (Validation and Transformation Language)**, enabling harmonised, metadata-driven processing across datasets. \
+
+These software components are accompanied by containerised environments, the **SDMX Lab**, workflow templates and training resources that help institutions experiment with and adopt SDMX more easily.
+
+### Distinctive qualities
+
+What makes sdmx.io distinctive is its **use-case and workflow orientation**. Instead of being just a catalogue of tools, the platform promotes patterns for end-to-end statistical processes — such as using metadata registries to define structures, applying VTL transformations for validation and automating dissemination via dashboards. This practical orientation ensures that institutions can move smoothly from design to implementation, reusing established solutions rather than starting from scratch.
+
+### Governance and sustainability
+
+The governance of sdmx.io is designed to be inclusive, with advisory groups and steering mechanisms that involve SDMX sponsors, NSOs, central banks and private sector partners. This ensures that priorities reflect real-world needs and that the ecosystem develops in a balanced, sustainable way. By combining shared ownership with clear coordination, sdmx.io provides stability while leaving room for innovation and experimentation.
+
+### Contribution to modernisation
+
+From a modernisation perspective, sdmx.io advances transparency, interoperability and efficiency. By lowering barriers to SDMX and VTL adoption, it helps statistical institutions align with international standards. By curating open-source resources and learning materials, it fosters capacity building. And by connecting diverse partners, it creates a foundation for sustainable collaboration between public institutions and private actors. In short, sdmx.io serves as a bridge — linking technology, governance and community in support of modern statistical systems.
+
+### Conclusion
+
+In summary, sdmx.io demonstrates how open-source collaboration can deliver practical benefits to the global statistical community. Thanks to its partnership model that spans international organisations, national authorities, private companies and open-source communities, it encourages interoperability and treating software as a public good, providing a trusted foundation for organisations seeking to modernise their statistical processes in line with international best practices.
+
+
+
 [^2]:  Alexander Kowarik, Mark van der Loo (2018). Using R in the statistical office: the experience of statistics Netherlands and Statistics Austria. Romanian Statistical Review 1/2018 15—29
 
 [^3]:  J. Pannekoek, S. Scholtus, M. van der Loo (2013). Automated and manual data editing: a view on process design and methodology. Journal of Official Statistics 29 511-537
